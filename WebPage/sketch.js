@@ -13,6 +13,7 @@ function setup() {
   textSize(32);
   fill(0)
   text("Lick Wilmerding Course Selection", width/2, 50); //title
+
   fill("#ffe599")
   rect(width/2-500,70,1000,40,5)
   
@@ -53,6 +54,7 @@ function setup() {
   button5.style("font-size", "22px")
   button5.style("background-color", "#cfe2f3")
   button5.mousePressed(dePartments);
+
 }
 
 function draw() {
