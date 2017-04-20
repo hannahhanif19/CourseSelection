@@ -4,6 +4,8 @@ var button2;
 var button3;
 var button4;
 var button5;
+var math;
+var english;
 
 function setup() {
   createCanvas(1275,700);
@@ -53,7 +55,7 @@ function setup() {
   button5.size(300,300);
   button5.style("font-size", "22px")
   button5.style("background-color", "#cfe2f3")
-  button5.mousePressed(dePartments);
+  button5.mousePressed(planSchedule);
 
 }
 
@@ -111,10 +113,31 @@ function dePartments() {
   button3.hide();
   button4.hide();
   button5.hide();
+  math = createButton('Math');
+  math.position(width/2-500, 300);
+  math.size(300,300);
+  math.style("font-size", "22px")
+  math.style("background-color", "#cfe2f3")
+  math.mousePressed(mathp);
   button1 = createButton('Go Back');
   button1.position(25, 25);
   button1.size(100,35);
   button1.mousePressed(setup);
+  button1.mousePressed(hideButton1);
+}
+
+function mathp() {
+  createCanvas(1275,700);
+  math.hide();
+  //button.hide();
+  //button2.hide();
+  //button3.hide();
+  //button4.hide();
+  //button5.hide();
+  button1 = createButton('Go Back');
+  button1.position(25, 25);
+  button1.size(100,35);
+  button1.mousePressed(dePartments);
   button1.mousePressed(hideButton1);
 }
 
