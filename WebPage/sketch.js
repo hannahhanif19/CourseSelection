@@ -10,6 +10,8 @@ var science;
 var historyn;
 var wlang;
 var electives;
+var button6;
+
 
 function setup() {
   createCanvas(1275,700);
@@ -117,6 +119,7 @@ function dePartments() {
   button3.hide();
   button4.hide();
   button5.hide();
+  
   math = createButton('Math');
   math.position(100, 100);
   math.size(300,300);
