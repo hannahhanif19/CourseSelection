@@ -130,15 +130,9 @@ function mathp() {
   createCanvas(1275,700);
   math.hide();
   button1.hide();
-  //button.hide();
-  //button2.hide();
-  //button3.hide();
-  //button4.hide();
-  //button5.hide();
   button6 = createButton('Go Back');
   button6.position(25, 25);
   button6.size(100,35);
-  button6.style("background-color", "#cfe2f3")
   button6.mousePressed(dePartments);
   button6.mousePressed(hideButton6);
 }
