@@ -129,16 +129,18 @@ function dePartments() {
 function mathp() {
   createCanvas(1275,700);
   math.hide();
+  button1.hide();
   //button.hide();
   //button2.hide();
   //button3.hide();
   //button4.hide();
   //button5.hide();
-  button1 = createButton('Go Back');
-  button1.position(25, 25);
-  button1.size(100,35);
-  button1.mousePressed(dePartments);
-  button1.mousePressed(hideButton1);
+  button6 = createButton('Go Back');
+  button6.position(25, 25);
+  button6.size(100,35);
+  button6.style("background-color", "#cfe2f3")
+  button6.mousePressed(dePartments);
+  button6.mousePressed(hideButton6);
 }
 
 function planSchedule() {
@@ -157,4 +159,8 @@ function planSchedule() {
 
 function hideButton1() {
   button1.hide();
+}
+
+function hideButton6() {
+  button6.hide();
 }
