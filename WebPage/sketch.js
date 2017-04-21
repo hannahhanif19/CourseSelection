@@ -6,6 +6,7 @@ var button4;
 var button5;
 var math;
 var english;
+var button6;
 
 function setup() {
   createCanvas(1275,700);
@@ -113,12 +114,14 @@ function dePartments() {
   button3.hide();
   button4.hide();
   button5.hide();
+  
   math = createButton('Math');
   math.position(width/2-500, 300);
   math.size(300,300);
   math.style("font-size", "22px")
   math.style("background-color", "#cfe2f3")
   math.mousePressed(mathp);
+  
   button1 = createButton('Go Back');
   button1.position(25, 25);
   button1.size(100,35);
