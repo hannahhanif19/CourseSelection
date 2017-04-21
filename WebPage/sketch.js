@@ -48,21 +48,21 @@ function setup() {
 
   
   button3 = createButton('USER INFO');
-  button3.position(width/2-500, 300);
+  button3.position(width/2-500, 310);
   button3.size(300,300);
   button3.style("font-size", "22px")
   button3.style("background-color", "#cfe2f3")
   button3.mousePressed(userInfo);
   
   button4 = createButton('DEPARTMENTS');
-  button4.position(width/2-150, 300);
+  button4.position(width/2-150, 310);
   button4.size(300,300);
   button4.style("font-size", "22px")
   button4.style("background-color", "#cfe2f3")
   button4.mousePressed(dePartments);
   
   button5 = createButton('PLAN YOUR SCHEDULE');
-  button5.position(width/2 +200, 300);
+  button5.position(width/2 +200, 310);
   button5.size(300,300);
   button5.style("font-size", "22px")
   button5.style("background-color", "#cfe2f3")
