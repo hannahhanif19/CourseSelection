@@ -6,12 +6,13 @@ var button4;
 var button5;
 var math;
 var english;
+var button6;
+var overview;
 var science;
 var historyn;
 var wlang;
 var electives;
 var button6;
-
 
 function setup() {
   createCanvas(1275,700);
@@ -40,7 +41,11 @@ function setup() {
   textFont("Georgia");
   textSize(18);
   fill(0)
-  text("This is the course selection page that allows ……… (overview of web page)", width/2, 180); //course page overview
+  textAlign(CENTER);
+  textStyle(ITALIC);
+  overview = "This is the new and improved course selection page that allows students to find everything they are looking for during course signups all in one place. This page includes a login and sign up section so that students can save their work, a departments page that includes all the subjects and the courses offered at Lick, and a scheduling page which references to graduation requirements and an interactive course planner for the upcoming year. "; //course page overview
+  text(overview, width/2-350, 140, 680, 200);
+
   
   button3 = createButton('USER INFO');
   button3.position(width/2-500, 300);
@@ -62,7 +67,6 @@ function setup() {
   button5.style("font-size", "22px")
   button5.style("background-color", "#cfe2f3")
   button5.mousePressed(planSchedule);
-
 }
 
 function draw() {
@@ -121,6 +125,7 @@ function dePartments() {
   button5.hide();
   
   math = createButton('Math');
+
   math.position(100, 100);
   math.size(300,300);
   math.style("font-size", "22px");
@@ -175,6 +180,7 @@ function mathp() {
   historyn.hide();
   wlang.hide();
   elective.hide();
+
   button1.hide();
   button6 = createButton('Go Back');
   button6.position(25, 25);
