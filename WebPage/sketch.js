@@ -17,6 +17,7 @@ var wlang;
 var electives;
 var button6;
 
+
 function setup() {
   canvas = createCanvas(1275,700);
   canvas.position(0,0);
@@ -124,7 +125,7 @@ function userInfo() {
 
 function dePartments() {
   canvas2 = createCanvas(1275,700);
-  background("#beefed");
+  //background("#beefed");
   canvas2.position(0,0);
   button.hide();
   button2.hide();
@@ -132,13 +133,18 @@ function dePartments() {
   button4.hide();
   button5.hide();
   
-  math = createButton('Math');
+  select("#cows").position(100, 100);
+  select("#cows").size(300,300);
+  select("#cows").style("font-size", "22px");
+  select("#cows").style("background-color", "#cfe2f3");
+  select("#cows").style("z-index", "1");
+  //math = createButton('Math');
 
-  math.position(100, 100);
-  math.size(300,300);
-  math.style("font-size", "22px");
-  math.style("background-color", "#cfe2f3");
-  math.mousePressed(mathp);
+  //math.position(100, 100);
+  //math.size(300,300);
+  //math.style("font-size", "22px");
+  //math.style("background-color", "#cfe2f3");
+  //math.mousePressed(mathp);
   english = createButton('English');
   english.position(450, 100);
   english.size(300,300);
@@ -182,7 +188,7 @@ function dePartments() {
 
 function mathp() {
   noCanvas();
-  math.hide();
+  select("#cows").hide();
   english.hide();
   science.hide();
   historyn.hide();
@@ -201,7 +207,7 @@ function mathp() {
 
 function englishp() {
   createCanvas(1275,700);
-  math.hide();
+  select("#cows").hide();
   english.hide();
   science.hide();
   historyn.hide();
@@ -217,7 +223,7 @@ function englishp() {
 
 function sciencep() {
   createCanvas(1275,700);
-  math.hide();
+  select("#cows").hide();
   english.hide();
   science.hide();
   historyn.hide();
@@ -233,7 +239,7 @@ function sciencep() {
 
 function historyp() {
   createCanvas(1275,700);
-  math.hide();
+  select("#cows").hide();
   english.hide();
   science.hide();
   historyn.hide();
@@ -249,7 +255,7 @@ function historyp() {
 
 function wlangp() {
   createCanvas(1275,700);
-  math.hide();
+  select("#cows").hide();
   english.hide();
   science.hide();
   historyn.hide();
@@ -265,7 +271,7 @@ function wlangp() {
 
 function electivep() {
   createCanvas(1275,700);
-  math.hide();
+  select("#cows").hide();
   english.hide();
   science.hide();
   historyn.hide();
@@ -295,8 +301,8 @@ function planSchedule() {
 
 function hideButton1() {
   button1.hide();
-  math.hide();
-  //english.hide();
+  select("#cows").hide();
+  english.hide();
   science.hide();
   historyn.hide();
   wlang.hide();
