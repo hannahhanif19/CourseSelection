@@ -1,6 +1,3 @@
-var canvas;
-var canvas2;
-var canvas3;
 var button;
 var button1;
 var button2;
@@ -18,8 +15,7 @@ var electives;
 var button6;
 
 function setup() {
-  canvas = createCanvas(1275,700);
-  canvas.position(0,0);
+  createCanvas(1275,700);
   background("#beefed");
   textAlign(CENTER);
   textFont("Georgia");
@@ -71,8 +67,6 @@ function setup() {
   button5.style("font-size", "22px")
   button5.style("background-color", "#cfe2f3")
   button5.mousePressed(planSchedule);
-  
-  
 }
 
 function draw() {
@@ -123,22 +117,21 @@ function userInfo() {
 }
 
 function dePartments() {
-  canvas2 = createCanvas(1275,700);
-  background("#beefed");
-  canvas2.position(0,0);
+  createCanvas(1275,700);
   button.hide();
   button2.hide();
   button3.hide();
   button4.hide();
   button5.hide();
   
-  math = createButton('Math');
+  math = createButton("Math"); //also also put <a href='math.html'>Math</a> in the parentheses
 
   math.position(100, 100);
   math.size(300,300);
   math.style("font-size", "22px");
   math.style("background-color", "#cfe2f3");
   math.mousePressed(mathp);
+  
   english = createButton('English');
   english.position(450, 100);
   english.size(300,300);
@@ -181,7 +174,7 @@ function dePartments() {
 }
 
 function mathp() {
-  noCanvas();
+  createCanvas(1275,700);
   math.hide();
   english.hide();
   science.hide();
@@ -195,8 +188,6 @@ function mathp() {
   button6.size(100,35);
   button6.mousePressed(dePartments);
   button6.mousePressed(hideButton6);
-  
-  
 }
 
 function englishp() {
@@ -296,7 +287,7 @@ function planSchedule() {
 function hideButton1() {
   button1.hide();
   math.hide();
-  //english.hide();
+  english.hide();
   science.hide();
   historyn.hide();
   wlang.hide();
