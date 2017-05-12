@@ -24,7 +24,7 @@
 
 				};
 			});
-			$('#subjects').on("dragenter dragover drop", function (event) {	
+			$('.drags').on("dragenter dragover drop", function (event) {	
 				event.preventDefault();
 				if (event.type === 'drop') {
 					var data = event.originalEvent.dataTransfer.getData('Text',$(this).attr('id'));
@@ -61,7 +61,7 @@
 			border-radius: 20%;
 			background-color: #09C;
 			overflow:auto;
-			width: 100px;
+			width: 125px;
 			margin: 0 auto;
 			text-align: center;
 
@@ -96,51 +96,88 @@
 			<div data-role="main" class="ui-content">
 				<div data-role="collapsible" class="subjects">
 				  <h1>Math</h1>
-				  <br/>
-				  <br/>
-			 		<span class="event" id="a" draggable="true"><p>Algebra 2 Accelerated</p></span>
+				    <div class="drags">
+				    <br/>
+				    <br/>
+			 		<span class="event" id="algebra" draggable="true"><p>Algebra 1</p></span>
+			 		<span class="event" id="igeo" draggable="true"><p>Inductive Geometry</p></span>
+			 		<span class="event" id="dgeo" draggable="true"><p>Deductive Geometry</p></span>
+			 		<span class="event" id="a2" draggable="true"><p>Algebra 2</p></span>
+			 		<span class="event" id="a2a" draggable="true"><p>Algebra 2 Accelerated</p></span>
 			 		<br/>
-				  <br/>
+				    <br/>
+				    </div>
 				</div>
 				<div data-role="collapsible" class="subjects">
 				<h1>English</h1>
-				<br/>
-				  <br/>
-					<span class="event" id="b" draggable="true"><p>English 2</p></span>
-					<br/>
-				  <br/>
+				<div class="drags">
+				    <br/>
+				    <br/>
+			 		<span class="event" id="e1" draggable="true"><p>English 1</p></span>
+			 		<span class="event" id="e2" draggable="true"><p>English 2</p></span>
+			 		<span class="event" id="e3h" draggable="true"><p>English 3 Honors</p></span>
+			 		<span class="event" id="e4hbnw" draggable="true"><p>English 4 Honors: Brave New Worlds</p></span>
+			 		<span class="event" id="e4hgs" draggable="true"><p>English 4 Honors: Gender and Sexuality in Literature</p></span>
+			 		<br/>
+				    <br/>
+				    </div>
 				</div>
 				<div data-role="collapsible" class="subjects">
 				<h1>Science</h1>
-				<br/>
-				  <br/>
-					<span class="event" id="c" draggable="true"><p>Computing 2</p></span>
-					<br/>
-				  <br/>
+				<div class="drags">
+				    <br/>
+				    <br/>
+			 		<span class="event" id="bio" draggable="true"><p>Biology</p></span>
+			 		<span class="event" id="chem" draggable="true"><p>Chemistry</p></span>
+			 		<span class="event" id="phys" draggable="true"><p>Physics</p></span>
+			 		<span class="event" id="hbioap" draggable="true"><p>Honors Biology: Anatomy and Physiology</p></span>
+			 		<span class="event" id="hchem" draggable="true"><p>Honors Chemistry</p></span>
+			 		<br/>
+				    <br/>
+				    </div>
 				</div>
 				<div data-role="collapsible" class="subjects">
 				<h1>History</h1>
-				<br/>
-				  <br/>
-					<span class="event" id="c" draggable="true"><p>Computing 2</p></span>
-					<br/>
-				  <br/>
+				<div class="drags">
+				    <br/>
+				    <br/>
+			 		<span class="event" id="mwh" draggable="true"><p>Modern World History</p></span>
+			 		<span class="event" id="ush" draggable="true"><p>US History Honors</p></span>
+			 		<span class="event" id="hs1960" draggable="true"><p>Modern U.S. History Seminar PPP: America in the 1960s</p></span>
+			 		<span class="event" id="hsla" draggable="true"><p>Modern World History Seminar: Cultural Encounters and Anxieties in Modern Latin America</p></span>
+			 		<span class="event" id="hsurban" draggable="true"><p>Modern World History Seminar PPP: Patterns in Urbanization</p></span>
+			 		<br/>
+				    <br/>
+				    </div>
 				</div>
 				<div data-role="collapsible" class="subjects">
 				<h1>World Language</h1>
-				<br/>
-				  <br/>
-					<span class="event" id="c" draggable="true"><p>Computing 2</p></span>
-					<br/>
-				  <br/>
+				<div class="drags">
+				    <br/>
+				    <br/>
+			 		<span class="event" id="fr1" draggable="true"><p>French 1</p></span>
+			 		<span class="event" id="sp1" draggable="true"><p>Spanish 1</p></span>
+			 		<span class="event" id="ch1" draggable="true"><p>Chinese 1</p></span>
+			 		<span class="event" id="fr2" draggable="true"><p>French 2</p></span>
+			 		<span class="event" id="sp2" draggable="true"><p>Spanish 2</p></span>
+			 		<span class="event" id="ch2" draggable="true"><p>Chinese 2</p></span>
+			 		<br/>
+				    <br/>
+				    </div>
 				</div>
 				<div data-role="collapsible" class="subjects">
 				<h1>Elective</h1>
-				<br/>
-				  <br/>
-					<span class="event" id="c" draggable="true"><p>Computing 2</p></span>
-					<br/>
-				  <br/>
+				<div class="drags">
+				    <br/>
+				    <br/>
+			 		<span class="event" id="comp1" draggable="true"><p>Computing 1</p></span>
+			 		<span class="event" id="dp" draggable="true"><p>Drawing and Painting</p></span>
+			 		<span class="event" id="orch" draggable="true"><p>Advanced Chamber Orchestra</p></span>
+			 		<span class="event" id="act" draggable="true"><p>Acting</p></span>
+			 		<span class="event" id="comb" draggable="true"><p>Advanced Combo PPP</p></span>
+			 		<br/>
+				    <br/>
+				    </div>
 				</div>
 </div>
 </div>
@@ -152,13 +189,13 @@
 						<th>3rd Choice</th>
 					</tr>
 					<tr>
-						<th>English</th>
+						<th>Math</th>
 						<td></td>
 						<td></td>
 						<td></td>
 					</tr>
 					<tr>
-						<th>Math</th>
+						<th>English</th>
 						<td></td>
 						<td></td>
 						<td></td>
