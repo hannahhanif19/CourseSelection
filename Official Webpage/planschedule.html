@@ -1,143 +1,237 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" type="text/javascript"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" type="text/javascript"></script>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
-<script>
-	$(document).ready(function(){
-		$('.event').on("dragstart", function (event) {
-			  var dt = event.originalEvent.dataTransfer;
-			  dt.setData('Text', $(this).attr('id'));
+	<script>
+		$(document).ready(function(){
+			$('.event').on("dragstart", function (event) {
+				var dt = event.originalEvent.dataTransfer;
+				dt.setData('Text', $(this).attr('id'));
 			});
-	    $('table td').on("dragenter dragover drop", function (event) {	
-		   event.preventDefault();
-		   if (event.type === 'drop') {
-			  var data = event.originalEvent.dataTransfer.getData('Text',$(this).attr('id'));
-			  if($(this).find('span').length===0){
-				   de=$('#'+data).detach();
-				   de.appendTo($(this));	
-				  }
-			 
-		   };
-	   });
-	     $('#classes').on("dragenter dragover drop", function (event) {	
-		   event.preventDefault();
-		   if (event.type === 'drop') {
-			  var data = event.originalEvent.dataTransfer.getData('Text',$(this).attr('id'));
-				   de=$('#'+data).detach();
-				   de.appendTo($(this));	
-			 
-		   };
-	   });
-})
+			$('table td').on("dragenter dragover drop", function (event) {	
+				event.preventDefault();
+				if (event.type === 'drop') {
+					var data = event.originalEvent.dataTransfer.getData('Text',$(this).attr('id'));
+					if($(this).find('span').length===0){
+						de=$('#'+data).detach();
+						de.appendTo($(this));	
+					}
+
+				};
+			});
+			$('.drags').on("dragenter dragover drop", function (event) {	
+				event.preventDefault();
+				if (event.type === 'drop') {
+					var data = event.originalEvent.dataTransfer.getData('Text',$(this).attr('id'));
+					de=$('#'+data).detach();
+					de.appendTo($(this));	
+
+				};
+			});
+		})
 
 
-</script>
+	</script>
 
-<style>
- body {
- 	background-color: #beefed;
- 	width: 100%; 
- 	height: 100%; 
- 	margin: 1px;
- }
+	<style>
+		body {
+			background-color: #beefed;
+			width: 100%; 
+			height: 100%; 
+			margin: 1px;
+		}
 
-table th,table td{
-	outline-style: solid;
-	outline-color: MidnightBlue;
-	outline-width: 5px;
-	border-style: none; 
-	height: 70px;
-	width: 200px;
-    text-align: center;
-	padding: 3px;
-}
-span{
-	display:block;
-	border-radius: 20%;
-	background-color: #09C;
-	overflow:auto;
-	width: 100px;
-	margin: 0 auto;
-	text-align: center;
+		table th,table td{
+			outline-style: solid;
+			outline-color: MidnightBlue;
+			outline-width: 5px;
+			border-style: none; 
+			height: 70px;
+			width: 200px;
+			text-align: center;
+			padding: 3px;
+		}
+		span{
+			display:block;
+			border-radius: 20%;
+			background-color: #09C;
+			overflow:auto;
+			width: 125px;
+			margin: 0 auto;
+			text-align: center;
 
-}
+		}
 
-.inline {
-	display: inline-block;
-	vertical-align:top;
-}
+		.inline {
+			display: inline-block;
+			vertical-align:top;
+		}
 
-#classes {
-	outline: solid;
-	outline-color: MidnightBlue;
-	outline-width: 5px;
-	height: calc(78*7px);
-	width: 200px;
-	text-align: center;
+		#classes {
+			outline: solid;
+			outline-color: MidnightBlue;
+			outline-width: 5px;
+			height: calc(78*8px);
+			width: 200px;
+			text-align: center;
+			overflow-y: auto;
 
-}
+		}
 
 
-</style>
+	</style>
 </head>
 <body>
-<a href="index.html"><button id="back" style="height:60px;width:120px;font-size:18px; font-family:georgia; background-color:#cfe2f3;">GO BACK</button></a>
+	<div data-role="page">
+		<a href="index.html"><button id="back" style="height:60px;width:120px;font-size:18px; font-family:georgia; background-color:#cfe2f3;">GO BACK</button></a>
 
-	<p></p>
-<div class="inline" id="classes">
-<p>Classes</p>
-<span class="event" id="a" draggable="true"><p>Algebra 2 Accelerated</p></span>
-<span class="event" id="b" draggable="true"><p>English 2</p></span>
-<span class="event" id="c" draggable="true"><p>Computing 2</p></span>
+		<p></p>
+		<div class="inline" id="classes">
+			<p>Classes</p>
+			<div data-role="main" class="ui-content">
+				<div data-role="collapsible" class="subjects">
+				  <h1>Math</h1>
+				    <div class="drags">
+				    <br/>
+				    <br/>
+			 		<span class="event" id="algebra" draggable="true"><p>Algebra 1</p></span>
+			 		<span class="event" id="igeo" draggable="true"><p>Inductive Geometry</p></span>
+			 		<span class="event" id="dgeo" draggable="true"><p>Deductive Geometry</p></span>
+			 		<span class="event" id="a2" draggable="true"><p>Algebra 2</p></span>
+			 		<span class="event" id="a2a" draggable="true"><p>Algebra 2 Accelerated</p></span>
+			 		<br/>
+				    <br/>
+				    </div>
+				</div>
+				<div data-role="collapsible" class="subjects">
+				<h1>English</h1>
+				<div class="drags">
+				    <br/>
+				    <br/>
+			 		<span class="event" id="e1" draggable="true"><p>English 1</p></span>
+			 		<span class="event" id="e2" draggable="true"><p>English 2</p></span>
+			 		<span class="event" id="e3h" draggable="true"><p>English 3 Honors</p></span>
+			 		<span class="event" id="e4hbnw" draggable="true"><p>English 4 Honors: Brave New Worlds</p></span>
+			 		<span class="event" id="e4hgs" draggable="true"><p>English 4 Honors: Gender and Sexuality in Literature</p></span>
+			 		<br/>
+				    <br/>
+				    </div>
+				</div>
+				<div data-role="collapsible" class="subjects">
+				<h1>Science</h1>
+				<div class="drags">
+				    <br/>
+				    <br/>
+			 		<span class="event" id="bio" draggable="true"><p>Biology</p></span>
+			 		<span class="event" id="chem" draggable="true"><p>Chemistry</p></span>
+			 		<span class="event" id="phys" draggable="true"><p>Physics</p></span>
+			 		<span class="event" id="hbioap" draggable="true"><p>Honors Biology: Anatomy and Physiology</p></span>
+			 		<span class="event" id="hchem" draggable="true"><p>Honors Chemistry</p></span>
+			 		<br/>
+				    <br/>
+				    </div>
+				</div>
+				<div data-role="collapsible" class="subjects">
+				<h1>History</h1>
+				<div class="drags">
+				    <br/>
+				    <br/>
+			 		<span class="event" id="mwh" draggable="true"><p>Modern World History</p></span>
+			 		<span class="event" id="ush" draggable="true"><p>US History Honors</p></span>
+			 		<span class="event" id="hs1960" draggable="true"><p>Modern U.S. History Seminar PPP: America in the 1960s</p></span>
+			 		<span class="event" id="hsla" draggable="true"><p>Modern World History Seminar: Cultural Encounters and Anxieties in Modern Latin America</p></span>
+			 		<span class="event" id="hsurban" draggable="true"><p>Modern World History Seminar PPP: Patterns in Urbanization</p></span>
+			 		<br/>
+				    <br/>
+				    </div>
+				</div>
+				<div data-role="collapsible" class="subjects">
+				<h1>World Language</h1>
+				<div class="drags">
+				    <br/>
+				    <br/>
+			 		<span class="event" id="fr1" draggable="true"><p>French 1</p></span>
+			 		<span class="event" id="sp1" draggable="true"><p>Spanish 1</p></span>
+			 		<span class="event" id="ch1" draggable="true"><p>Chinese 1</p></span>
+			 		<span class="event" id="fr2" draggable="true"><p>French 2</p></span>
+			 		<span class="event" id="sp2" draggable="true"><p>Spanish 2</p></span>
+			 		<span class="event" id="ch2" draggable="true"><p>Chinese 2</p></span>
+			 		<br/>
+				    <br/>
+				    </div>
+				</div>
+				<div data-role="collapsible" class="subjects">
+				<h1>Elective</h1>
+				<div class="drags">
+				    <br/>
+				    <br/>
+			 		<span class="event" id="comp1" draggable="true"><p>Computing 1</p></span>
+			 		<span class="event" id="dp" draggable="true"><p>Drawing and Painting</p></span>
+			 		<span class="event" id="orch" draggable="true"><p>Advanced Chamber Orchestra</p></span>
+			 		<span class="event" id="act" draggable="true"><p>Acting</p></span>
+			 		<span class="event" id="comb" draggable="true"><p>Advanced Combo PPP</p></span>
+			 		<br/>
+				    <br/>
+				    </div>
+				</div>
 </div>
+</div>
+				<table class="inline" id="#our_table"  border="1">
+					<tr>
+						<th></th>
+						<th>1st Choice</th>
+						<th>2nd Choice</th>
+						<th>3rd Choice</th>
+					</tr>
+					<tr>
+						<th>Math</th>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<th>English</th>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<th>Science</th>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<th>History</th>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<th>World Language</th>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<th>Elective/Doubles #1</th>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<th>Elective/Doubles #2</th>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
 
-<table class="inline" id="#our_table"  border="1">
-<tr>
-<th></th>
-<th>1st Choice</th>
-<th>2nd Choice</th>
-<th>3rd Choice</th>
-</tr>
-<tr>
-<th>English</th>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<th>Math</th>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<th>Science</th>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<th>History</th>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<th>World Language</th>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<th>Elective</th>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</table>
-<!-- </div> -->
-
-</body>
-</html>
+		</body>
+		</html>
