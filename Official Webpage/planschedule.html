@@ -9,34 +9,277 @@
 
 	<script>
 		$(document).ready(function(){
+			console.log("start");
 			$('.event').on("dragstart", function (event) {
+				console.log("start2");
+
 				var dt = event.originalEvent.dataTransfer;
 				dt.setData('Text', $(this).attr('id'));
+
 			});
-			$('table td').on("dragenter dragover drop", function (event) {	
+
+			$('.dropin').on("dragenter dragover drop", function (event) {	
+
 				event.preventDefault();
 				if (event.type === 'drop') {
+
 					var data = event.originalEvent.dataTransfer.getData('Text',$(this).attr('id'));
 					if($(this).find('span').length===0){
+
 						de=$('#'+data).detach();
 						de.appendTo($(this));	
-					}
 
+					}
 				};
 			});
+
+			var select = document.getElementById("grades"); 
+			console.log("start25");
+			select.onchange = function() {
+            console.log("start3");
+			var changer = document.getElementById("grades").value;
+
+			if (changer==="frosh") {
+				document.getElementById("cma").innerHTML = "CMA";
+			document.getElementById("bme").innerHTML = "BME";
+			document.getElementById("elective").innerHTML = "Elective";
+			document.getElementById("dt").innerHTML = "D&T";
+			document.getElementById("free").innerHTML = "Design and Technology";
+			document.getElementById("nbme").innerHTML = "Body and Mind Education";
+			document.getElementById("nncma").innerHTML = "Contemporary Media and Art";
+			document.getElementById("neng").innerHTML = "English 1";
+			document.getElementById("nsci").innerHTML = "Biology";
+			$('.ncma').css('background-color', '#989898');
+			$('#nbme').css('background-color', '#989898');
+			$('#neng').css('background-color', '#989898');
+			$('#nsci').css('background-color', '#989898');
+			$('.drop2').css('background-color', '#989898');
+			$('.drop3').css('background-color', '#989898');
+
+			$('.dropin').on("dragenter dragover drop", function (event) {	
+
+				event.preventDefault();
+				if (event.type === 'drop') {
+
+					var data = event.originalEvent.dataTransfer.getData('Text',$(this).attr('id'));
+					if($(this).find('span').length===0){
+
+						de=$('#'+data).detach();
+						de.appendTo($(this));	
+
+					}
+				};
+			});
+		    };
+		    if (changer==="soph") {
+		    	document.getElementById("bme").innerHTML = "History";
+		    	document.getElementById("cma").innerHTML = "Elective/Doubles #2";
+		    	document.getElementById("elective").innerHTML = "Electives/Doubles #1";
+		    	document.getElementById("dt").innerHTML = "Free";
+		    	document.getElementById("free").innerHTML = "Free Block";
+		    	document.getElementById("nbme").innerHTML = "Modern World History";
+		    	document.getElementById("nncma").innerHTML = "";
+		    	document.getElementById("neng").innerHTML = "English 2";
+		    	document.getElementById("nsci").innerHTML = "Chemistry";
+		    	$('.ncma').css('background-color', '#eeeeee');
+		    	$('#nbme').css('background-color', '#989898');
+		    	$('#neng').css('background-color', '#989898');
+		    	$('#nsci').css('background-color', '#989898');
+		    	$('.drop2').css('background-color', '#989898');
+		    	$('.drop3').css('background-color', '#989898');
+
+		    	$('.dropin').on("dragenter dragover drop", function (event) {	
+
+				event.preventDefault();
+				if (event.type === 'drop') {
+
+					var data = event.originalEvent.dataTransfer.getData('Text',$(this).attr('id'));
+					if($(this).find('span').length===0){
+
+						de=$('#'+data).detach();
+						de.appendTo($(this));	
+
+					}
+				};
+			});
+
+		    	$('.ncma').on("dragenter dragover drop", function (event) {	
+
+				event.preventDefault();
+				if (event.type === 'drop') {
+
+					var data = event.originalEvent.dataTransfer.getData('Text',$(this).attr('id'));
+					if($(this).find('span').length===0){
+
+						de=$('#'+data).detach();
+						de.appendTo($(this));	
+
+					}
+				};
+			});
+
+		    };
+
+		    if (changer==="jr") {
+		    	document.getElementById("bme").innerHTML = "History";
+			document.getElementById("elective").innerHTML = "Electives/Doubles #1";
+			document.getElementById("cma").innerHTML = "Elective/Doubles #2";
+			document.getElementById("dt").innerHTML = "Free";
+			document.getElementById("free").innerHTML = "Free Block";
+			document.getElementById("nbme").innerHTML = "U.S. History Honors";
+			document.getElementById("nncma").innerHTML = "";
+			document.getElementById("neng").innerHTML = "English 3 Honors";
+			document.getElementById("nsci").innerHTML = "";
+			$('.ncma').css('background-color', '#eeeeee');
+			$('#nbme').css('background-color', '#989898');
+			$('#neng').css('background-color', '#989898');
+			$('#nsci').css('background-color', '#eeeeee');
+			$('.drop2').css('background-color', '#eeeeee');
+			$('.drop3').css('background-color', '#989898');
+
+		    	$('.dropin').on("dragenter dragover drop", function (event) {	
+
+				event.preventDefault();
+				if (event.type === 'drop') {
+
+					var data = event.originalEvent.dataTransfer.getData('Text',$(this).attr('id'));
+					if($(this).find('span').length===0){
+
+						de=$('#'+data).detach();
+						de.appendTo($(this));	
+
+					}
+				};
+			});
+
+		    	$('.ncma').on("dragenter dragover drop", function (event) {	
+
+				event.preventDefault();
+				if (event.type === 'drop') {
+
+					var data = event.originalEvent.dataTransfer.getData('Text',$(this).attr('id'));
+					if($(this).find('span').length===0){
+
+						de=$('#'+data).detach();
+						de.appendTo($(this));	
+
+					}
+				};
+			});
+
+		    	$('.drop2').on("dragenter dragover drop", function (event) {	
+
+				event.preventDefault();
+				if (event.type === 'drop') {
+
+					var data = event.originalEvent.dataTransfer.getData('Text',$(this).attr('id'));
+					if($(this).find('span').length===0){
+
+						de=$('#'+data).detach();
+						de.appendTo($(this));	
+
+					}
+				};
+			});
+
+		    };
+
+		    if (changer=="sr") {
+		    	document.getElementById("bme").innerHTML = "History";
+			document.getElementById("elective").innerHTML = "Electives/Doubles #1";
+			document.getElementById("cma").innerHTML = "Elective/Doubles #2";
+			document.getElementById("dt").innerHTML = "Free";
+			document.getElementById("free").innerHTML = "Free Block";
+			document.getElementById("nbme").innerHTML = "";
+			document.getElementById("nncma").innerHTML = "";
+			document.getElementById("neng").innerHTML = "";
+			document.getElementById("nsci").innerHTML = "";
+			$('.ncma').css('background-color', '#eeeeee');
+			$('#nbme').css('background-color', '#eeeeee');
+			$('#neng').css('background-color', '#eeeeee');
+			$('#nsci').css('background-color', '#eeeeee');
+			$('.drop2').css('background-color', '#eeeeee');
+			$('.drop3').css('background-color', '#eeeeee');
+
+		    	$('.dropin').on("dragenter dragover drop", function (event) {	
+
+				event.preventDefault();
+				if (event.type === 'drop') {
+
+					var data = event.originalEvent.dataTransfer.getData('Text',$(this).attr('id'));
+					if($(this).find('span').length===0){
+
+						de=$('#'+data).detach();
+						de.appendTo($(this));	
+
+					}
+				};
+			});
+
+		    	$('.ncma').on("dragenter dragover drop", function (event) {	
+
+				event.preventDefault();
+				if (event.type === 'drop') {
+
+					var data = event.originalEvent.dataTransfer.getData('Text',$(this).attr('id'));
+					if($(this).find('span').length===0){
+
+						de=$('#'+data).detach();
+						de.appendTo($(this));	
+
+					}
+				};
+			});
+
+		    	$('.drop2').on("dragenter dragover drop", function (event) {	
+
+				event.preventDefault();
+				if (event.type === 'drop') {
+
+					var data = event.originalEvent.dataTransfer.getData('Text',$(this).attr('id'));
+					if($(this).find('span').length===0){
+
+						de=$('#'+data).detach();
+						de.appendTo($(this));	
+
+					}
+				};
+			});
+
+		    	$('.drop3').on("dragenter dragover drop", function (event) {	
+
+				event.preventDefault();
+				if (event.type === 'drop') {
+
+					var data = event.originalEvent.dataTransfer.getData('Text',$(this).attr('id'));
+					if($(this).find('span').length===0){
+
+						de=$('#'+data).detach();
+						de.appendTo($(this));	
+
+					}
+				};
+			});
+
+		    };
+
 			$('.drags').on("dragenter dragover drop", function (event) {	
 				event.preventDefault();
 				if (event.type === 'drop') {
+
 					var data = event.originalEvent.dataTransfer.getData('Text',$(this).attr('id'));
 					de=$('#'+data).detach();
 					de.appendTo($(this));	
 
 				};
 			});
-		})
+
+		}
+	})
 
 
 	</script>
+
 
 	<style>
 		body {
@@ -55,13 +298,25 @@
 			width: 200px;
 			text-align: center;
 			padding: 3px;
+			font-family: Georgia;
 		}
+
+		table th {
+			color: MidnightBlue;
+		}
+
+		table td {
+			background-color: #989898;
+			text-shadow: none;
+			font-weight: bold;
+		}
+
 		span{
 			display:block;
 			border-radius: 20%;
 			background-color: #09C;
 			overflow:auto;
-			width: 125px;
+			width: 127px;
 			margin: 0 auto;
 			text-align: center;
 
@@ -76,13 +331,27 @@
 			outline: solid;
 			outline-color: MidnightBlue;
 			outline-width: 5px;
-			height: calc(78*8px);
+			height: calc(78*9px);
 			width: 200px;
 			text-align: center;
 			overflow-y: auto;
-
 		}
 
+		.dropin {
+			background-color: #eeeeee;
+		}
+
+		.grade {
+			background-color: transparent;
+		}
+
+		.ncma {
+			background-color: "#989898";
+		}
+
+		#nbme {
+			background-color: "#989898";
+		}
 
 	</style>
 </head>
@@ -103,6 +372,15 @@
 			 		<span class="event" id="dgeo" draggable="true"><p>Deductive Geometry</p></span>
 			 		<span class="event" id="a2" draggable="true"><p>Algebra 2</p></span>
 			 		<span class="event" id="a2a" draggable="true"><p>Algebra 2 Accelerated</p></span>
+			 		<span class="event" id="prec" draggable="true"><p>Precalculus</p></span>
+			 		<span class="event" id="precppp" draggable="true"><p>Precalculus PPP</p></span>
+			 		<span class="event" id="honprec" draggable="true"><p>Honors Precalculus</p></span>
+			 		<span class="event" id="calc" draggable="true"><p>Calculus</p></span>
+			 		<span class="event" id="calcppp" draggable="true"><p>Calculus PPP</p></span>
+			 		<span class="event" id="honcalc" draggable="true"><p>Honors Calculus</p></span>
+			 		<span class="event" id="stat1" draggable="true"><p>Honors Statistics 1: Descriptive Statistics and Data Visualization PPP</p></span>
+			 		<span class="event" id="stat2" draggable="true"><p>Honors Statistics 2: Inferential Statistics PPP</p></span>
+			 		<span class="event" id="appmath" draggable="true"><p>Applied Mathematics in the Real World</p></span>
 			 		<br/>
 				    <br/>
 				    </div>
@@ -114,9 +392,17 @@
 				    <br/>
 			 		<span class="event" id="e1" draggable="true"><p>English 1</p></span>
 			 		<span class="event" id="e2" draggable="true"><p>English 2</p></span>
+			 		<span class="event" id="journal" draggable="true"><p>Journalism PPP</p></span>
 			 		<span class="event" id="e3h" draggable="true"><p>English 3 Honors</p></span>
-			 		<span class="event" id="e4hbnw" draggable="true"><p>English 4 Honors: Brave New Worlds</p></span>
-			 		<span class="event" id="e4hgs" draggable="true"><p>English 4 Honors: Gender and Sexuality in Literature</p></span>
+			 		<span class="event" id="creawrit" draggable="true"><p>Creative Writing: Memoir, the Art of the Personal Story</p></span>
+			 		<span class="event" id="e4bearwit" draggable="true"><p>English 4 Honors PPP: Bearing Witness: Writers and Artists Respond to Genocide</p></span>
+			 		<span class="event" id="e4ethnic" draggable="true"><p>English 4 Honors PPP: Ethnic Studies Through U.S. Literature</p></span>
+			 		<span class="event" id="e4civwar" draggable="true"><p>English 4 Honors PPP: The Civil War and Reconstruction in American Imagination</p></span>
+			 		<span class="event" id="e4bnw" draggable="true"><p>English 4 Honors: Brave New Worlds</p></span>
+			 		<span class="event" id="e4gs" draggable="true"><p>English 4 Honors: Gender and Sexuality in Literature</p></span>
+			 		<span class="event" id="e4race" draggable="true"><p>English 4 Honors: Race and Mixed Race in U.S. Literature</p></span>
+			 		<span class="event" id="e4wisdom" draggable="true"><p>English 4 Honors: William Shakespeare and Mark Twain, Where is Wisdom Found?</p></span>
+			 		<span class="event" id="e4short" draggable="true"><p>English 4 Honors: The Play of Words, Reading and Wriing the Short Story</p></span>
 			 		<br/>
 				    <br/>
 				    </div>
@@ -128,9 +414,15 @@
 				    <br/>
 			 		<span class="event" id="bio" draggable="true"><p>Biology</p></span>
 			 		<span class="event" id="chem" draggable="true"><p>Chemistry</p></span>
-			 		<span class="event" id="phys" draggable="true"><p>Physics</p></span>
 			 		<span class="event" id="hbioap" draggable="true"><p>Honors Biology: Anatomy and Physiology</p></span>
+			 		<span class="event" id="hbioclas" draggable="true"><p>Honors Biology: Classical and Behavioral Genetics</p></span>
+			 		<span class="event" id="hbioethics" draggable="true"><p>Honors Biology: Molecular Genetics and Ethics</p></span>
 			 		<span class="event" id="hchem" draggable="true"><p>Honors Chemistry</p></span>
+			 		<span class="event" id="env" draggable="true"><p>Environmental Science</p></span>
+			 		<span class="event" id="meco" draggable="true"><p>Marine Ecology PPP</p></span>
+			 		<span class="event" id="phys" draggable="true"><p>Physics</p></span>
+			 		<span class="event" id="hphys" draggable="true"><p>Honors Physics</p></span>
+			 		<span class="event" id="psy" draggable="true"><p>Psychology: Brain and Behavior</p></span>
 			 		<br/>
 				    <br/>
 				    </div>
@@ -142,9 +434,17 @@
 				    <br/>
 			 		<span class="event" id="mwh" draggable="true"><p>Modern World History</p></span>
 			 		<span class="event" id="ush" draggable="true"><p>US History Honors</p></span>
-			 		<span class="event" id="hs1960" draggable="true"><p>Modern U.S. History Seminar PPP: America in the 1960s</p></span>
-			 		<span class="event" id="hsla" draggable="true"><p>Modern World History Seminar: Cultural Encounters and Anxieties in Modern Latin America</p></span>
-			 		<span class="event" id="hsurban" draggable="true"><p>Modern World History Seminar PPP: Patterns in Urbanization</p></span>
+			 		<span class="event" id="uswhite" draggable="true"><p>Modern U.S. History Seminar: Constructions of Whiteness</p></span>
+			 		<span class="event" id="whwitness" draggable="true"><p>Modern World History Seminar: Bearing Witness, Holocaust and Genocides</p></span>
+			 		<span class="event" id="whlatin" draggable="true"><p>Modern World History Seminar: Cultural Encounters and Anxieties in Modern Latin America</p></span>
+			 		<span class="event" id="whphil" draggable="true"><p>Modern World History Seminar: Revolutionary Thinking, an Introduction to Philosophy</p></span>
+			 		<span class="event" id="whcold" draggable="true"><p>Modern World History Seminar: The Cold War</p></span>
+			 		<span class="event" id="whgeno" draggable="true"><p>Modern World History Seminar PPP: Bearing Witness: Genocide and its Aftermath</p></span>
+			 		<span class="event" id="us1960" draggable="true"><p>Modern U.S. History Seminar PPP: America in the 1960s</p></span>
+			 		<span class="event" id="usimmig" draggable="true"><p>Modern U.S. History Seminar PPP: Define American, an Exploration of Immigration</p></span>
+			 		<span class="event" id="usmideast" draggable="true"><p>Modern U.S. History Seminar PPP: The U.S. and the Middle East</p></span>
+			 		<span class="event" id="whurban" draggable="true"><p>Modern World History Seminar PPP: Patterns in Urbanization</p></span>
+			 		<span class="event" id="whinterwar" draggable="true"><p>Modern World History Seminar PPP: The InterWar Years</p></span>
 			 		<br/>
 				    <br/>
 				    </div>
@@ -154,12 +454,22 @@
 				<div class="drags">
 				    <br/>
 				    <br/>
+				    <span class="event" id="ch1" draggable="true"><p>Chinese 1</p></span>
+				    <span class="event" id="ch2" draggable="true"><p>Chinese 2</p></span>
+				    <span class="event" id="ch3" draggable="true"><p>Chinese 3</p></span>
+				    <span class="event" id="ch4" draggable="true"><p>Chinese 4 Honors PPP</p></span>
 			 		<span class="event" id="fr1" draggable="true"><p>French 1</p></span>
-			 		<span class="event" id="sp1" draggable="true"><p>Spanish 1</p></span>
-			 		<span class="event" id="ch1" draggable="true"><p>Chinese 1</p></span>
 			 		<span class="event" id="fr2" draggable="true"><p>French 2</p></span>
+			 		<span class="event" id="fr3" draggable="true"><p>French 3</p></span>
+			 		<span class="event" id="fr4" draggable="true"><p>French 4 Honors PPP</p></span>
+			 		<span class="event" id="sp1" draggable="true"><p>Spanish 1</p></span>
+			 		<span class="event" id="sp1a" draggable="true"><p>Spanish 1 Accelerated</p></span>
 			 		<span class="event" id="sp2" draggable="true"><p>Spanish 2</p></span>
-			 		<span class="event" id="ch2" draggable="true"><p>Chinese 2</p></span>
+			 		<span class="event" id="sp2a" draggable="true"><p>Spanish 2 Accelerated</p></span>
+			 		<span class="event" id="sp3ppp" draggable="true"><p>Spanish 3 PPP</p></span>
+			 		<span class="event" id="sp3h" draggable="true"><p>Spanish 3 Honors</p></span>
+			 		<span class="event" id="sp4" draggable="true"><p>Spanish 4</p></span>
+			 		<span class="event" id="sp4h" draggable="true"><p>Spanish 4 Honors</p></span>
 			 		<br/>
 				    <br/>
 				    </div>
@@ -169,7 +479,17 @@
 				<div class="drags">
 				    <br/>
 				    <br/>
+				    <span class="event" id="freeblock" draggable="true"><p>Free Block</p></span>
+				    <span class="event" id="entre" draggable="true"><p>#Entrepeneurship</p></span>
+				    <span class="event" id="advcomp" draggable="true"><p>Advanced Computer Science: Complexity Theory and Advanced Algorithms</p></span>
+				    <span class="event" id="istudy" draggable="true"><p>Independent Study PPP</p></span>
 			 		<span class="event" id="comp1" draggable="true"><p>Computing 1</p></span>
+			 		<span class="event" id="comp2" draggable="true"><p>Computing 2</p></span>
+			 		<span class="event" id="circ" draggable="true"><p>Circuits and Electronics: Analog and Digital</p></span>
+			 		<span class="event" id="devinvent" draggable="true"><p>Circuits and Electronics: Device Invention</p></span>
+			 		<span class="event" id="arch" draggable="true"><p>Architectual Design</p></span>
+			 		<span class="event" id="advarch" draggable="true"><p>Advanced Architectual Design</p></span>
+			 		<span class="event" id="stutech" draggable="true"><p>Student Leadership Training in a Technical Environment</p></span>
 			 		<span class="event" id="dp" draggable="true"><p>Drawing and Painting</p></span>
 			 		<span class="event" id="orch" draggable="true"><p>Advanced Chamber Orchestra</p></span>
 			 		<span class="event" id="act" draggable="true"><p>Acting</p></span>
@@ -182,50 +502,64 @@
 </div>
 				<table class="inline" id="#our_table"  border="1">
 					<tr>
-						<th></th>
+						<th>
+							<select id="grades">
+								<option class="grade" value="frosh">Freshman</option>
+								<option class="grade" value="soph">Sophomore</option>
+								<option class="grade" value="jr">Junior</option>
+								<option class="grade" value="sr">Senior</option>
+							</select>
+							</div>
+						</th>
 						<th>1st Choice</th>
 						<th>2nd Choice</th>
 						<th>3rd Choice</th>
 					</tr>
 					<tr>
 						<th>Math</th>
-						<td></td>
+						<td class="dropin"></td>
 						<td></td>
 						<td></td>
 					</tr>
 					<tr>
 						<th>English</th>
-						<td></td>
-						<td></td>
-						<td></td>
+						<td id="neng" class="drop3">English 1</td>
+						<td class="drop3"></td>
+						<td class="drop3"></td>
 					</tr>
 					<tr>
 						<th>Science</th>
-						<td></td>
-						<td></td>
-						<td></td>
+						<td id="nsci" class="drop2">Biology</td>
+						<td class="drop2"></td>
+						<td class="drop2"></td>
 					</tr>
 					<tr>
-						<th>History</th>
-						<td></td>
-						<td></td>
-						<td></td>
+						<th id="bme">BME</th>
+						<td class="drop3" id="nbme">Body and Mind Education</td>
+						<td class="drop3"></td>
+						<td class="drop3"></td>
 					</tr>
 					<tr>
 						<th>World Language</th>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<th>Elective/Doubles #1</th>
-						<td></td>
+						<td class="dropin"></td>
 						<td></td>
 						<td></td>
 					</tr>
 					<tr>
-						<th>Elective/Doubles #2</th>
-						<td></td>
+						<th id="elective">Elective/Free</th>
+						<td class="dropin"></td>
+						<td class="dropin"></td>
+						<td class="dropin"></td>
+					</tr>
+					<tr>
+						<th id="cma">CMA</th>
+						<td class="ncma" id="nncma">Contemporary Media and Art</td>
+						<td class="ncma"></td>
+						<td class="ncma"></td>
+					</tr>
+					<tr>
+						<th id="dt">D&T</th>
+						<td id="free">Design and Technology</td>
 						<td></td>
 						<td></td>
 					</tr>
