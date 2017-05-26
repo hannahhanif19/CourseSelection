@@ -6,19 +6,73 @@
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
-<style> body {padding: 0; margin: 0;} canvas {vertical-align: top;} div {background-color: #beefed;} h1{background-color: #ffe599;}</style>
+<style> 
+  body {
+  background-color: #eae0d5;
+   width: 100%; 
+   height: 100%;
+   /* Old browsers */
+background: -moz-linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+/* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+/* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+  } 
+
+  .ui-content {
+    position: relative;
+      padding-top: 110px;
+      background-color: #eae0d5;
+   width: 100%; 
+   height: 100%;
+   /* Old browsers */
+background: -moz-linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+/* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+/* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+  }
+
+  #col {
+      background-color: #eae0d5;
+      text-transform: uppercase;
+   width: 100%; 
+   height: 90px;
+   line-height: 50px;
+   position: fixed;
+   z-index: 2;
+   /* Old browsers */
+background: -moz-linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+/* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+/* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+
+    }
+
+  .folder {
+    max-width: 75%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  #foot {
+    padding: 5px;
+  }
+    </style>
 </head>
 <body>
 
 
 
 <div data-role="page">
-	<div data-role="header">
-    <h1 id="col">ENGLISH COURSES</h1>
+	<div id="col" data-role="header">
+    <h1 style="font-size: 30px;">English Courses</h1>
   </div>
 
   <div data-role="main" class="ui-content">
-    <div data-role="collapsible">
+    <div class="folder" data-role="collapsible">
 
       <h1>Overview</h1>
       <p>The four year English curriculum provides students with the skills and habits of mind to read, write, and speak confidently and competently about a broad range of texts. Each year, students hone their analytical skills by drawing on class discussions and independent close readings to craft thoughtful, subtle responses to literature from around the world. All English classes include frequent writing assignments in various genres that encourage students to develop an authentic voice, as well as critical and creative independent thinking. A focus on the writing process and revision skills is integral to every course. Classes are discussion and activity oriented, requiring students to become respectful of multiple perspectives, compassionate for others, and confident in expressing their ideas. All English courses are UC eligible.</p>
@@ -26,7 +80,7 @@
       <p>*Please note that all courses listed are in order of <b>availabilty to the advancing grade levels.</b></p>
     </div>
 
-    <div data-role="collapsible">
+    <div class="folder" data-role="collapsible">
       <h1>English 1</h1>
       <p>The English 1 curriculum prepares students for the study of literature and writing at LWHS. Students practice the skills of careful reading, listening, and speaking as they encounter literature in a variety of genres. Students are also introduced to and practice the foundations of analytical writing—thesis statements, textual evidence, embedding, and analyzing text. Students construct knowledge and their understanding of their own values and perspectives as they read and write. In particular, students are asked to consider the ways in which expectations for reading and writing change in high school. Learning collaboratively is also a significant focus of class as students work in groups to construct theories, explore evidence, and ask questions.<br></br>
       <b>This is a year-long course.</b></p>
@@ -36,7 +90,7 @@
       <p>Here is an example required <a href="https://www.lwhs.org/ftpimages/200/download/download_1930767.docx">Summer Reading</a> assignment for English 1.</p>
     </div>
 
-    <div data-role="collapsible">
+    <div class="folder" data-role="collapsible">
       <h1>English 2</h1>
       <p>The English 2 curriculum focuses on literature and ethics in the context of world literature. Students will explore a series of core texts, reading and analyzing fiction, nonfiction, and film. The course will use ethical questions to shape students’ critical thinking, discussions, and writing throughout the year. As they expand their “toolbox” for close reading literature, students learn to make thoughtful annotations, use the language of the text to make inferences, and craft interpretive questions for writing and discussion. Students frequently write analytical responses to literature, honing their skill at using relevant textual evidence and analysis to support a clear and specific main idea. Reflective essays, creative pieces, and student led discussions allow students to explore the ethical questions in a variety of ways. Working both with their peers and teachers during writing conferences, students further build upon their revision skills.<br></br>
       <b>This is a year-long course.</b></p>
@@ -47,7 +101,7 @@
       <p>Here is an example required <a href="https://https://www.lwhs.org/ftpimages/200/download/download_1930768.docx">Summer Reading</a> assignment for English 2.</p>
     </div>
 
-    <div data-role="collapsible">
+    <div class="folder" data-role="collapsible">
       <h1>Journalism PPP</h1>
       <p>The Journalism class offers an opportunity for students to work in a professional setting as a member of the Fourth Estate, the press, the vital investigative branch of democracy. Students will plan, write, edit, and design the LWHS student print publication, the <i>Paper Tiger</i>, and the <a href="http://www.lwhspapertiger.org/">online version</a>. Students will write in depth news stories, features, profiles, reviews, and editorials, and they must write for all sections of the paper—from news, sports, arts, leisure and op ed. To get the story, students will work in the field and in the newsroom researching, writing, discussing, and dissecting. The course will facilitate building skills around how to think critically, write strategies, and study the design and impact of rhetorical techniques. Students will consider both the ethics of journalism and the future of different news media. Students must learn Adobe InDesign CC to publish the paper.</p>
       <p>PPP requirements for the course will be satisfied by students identifying, investigating, and writing one long-form feature that highlights the work of a Bay Area community organization or a vital community issue. This feature must require research, investigation, and interviews off campus. The article will be published in the <i>Paper Tiger</i> and possibly in an external news outlet. In addition, students must write one op ed and submit it for consideration, for example, to Youth Radio or KQED Perspectives.</p>
@@ -55,7 +109,7 @@
       <b>This year-long course fulfills the Public Purpose Program requirement for juniors and seniors.</b></p><br></br>
     </div>
 
-    <div data-role="collapsible">
+    <div class="folder" data-role="collapsible">
       <h1>English 3 Honors</h1>
       <p>The English 3 Honors curriculum focuses on reading and writing about literature from the United States. As students engage in careful reading and critical analysis of literature from the colonial period through the 21st century, the course develops awareness about how language and story construct American identities, both individual and communal. In particular, students advance their close reading, specifically their understanding of detail, diction, imagery, syntax, and structure. Students write in a variety of genres and continue to develop strategies for crafting sophisticated arguments supported by precise textual evidence and analysis. A focus on stylistic and grammatical clarity becomes increasingly significant in writing workshops. Both group activities and whole class discussions are central to the study of the course texts. Collaborative projects and presentations encourage students to take on greater intellectual leadership in the classroom.<br></br>
       <b>This is a year-long course.</b></p>
@@ -66,7 +120,7 @@
       <p>Here is an example required <a href="https://https://https://www.lwhs.org/ftpimages/200/download/download_1930769.docx">Summer Reading</a> assignment for English 3 Honors.</p>
     </div>
 
-    <div data-role="collapsible">
+    <div class="folder" data-role="collapsible">
       <h1>Creative Writing: Memoir, the Art of the Personal Story</h1>
       <p>Something we do frequently and in many different forms (for college essays, when we enter new environments and new relationships, on job and fellowship applications) is tell people about who we are and what we care about. It seems like it should be easy, but it’s actually fairly complex to figure out what it means to capture a personal story that is relevant and significant to others as well as to ourselves. In order to learn how to tell our own stories and to talk about what’s most important to us and why, we will explore what it means to break down some of the preconceived notions and definitions (in terms of form and content) that seem to prescribe what it means to tell or write a personal narrative. The main tasks will be (1) to read many different types and forms of memoirs; (2) write your own personal memoirs implementing new techniques and forms; (3) workshop, critique, revise, and help others do so, and (4) keep a journal documenting your class work and your exercises. We can’t understand or empathize with others until we understand ourselves, and this course will provide an entry into doing both. Course texts will include writing by Joan Didion, Ta Nehisi Coates, Eula Biss, Natalia Ginzburg, Roxane Gay, Toni Morrison, Richard Rodriguez, David Sedaris, and many others.</p>
 
@@ -74,31 +128,31 @@
      <p><b>This semester-long elective is offered in the Spring.</b></p>
     </div>
 
-    <div data-role="collapsible">
+    <div class="folder" data-role="collapsible">
       <h1>English 4 Honors PPP: Bearing Witness: Writers and Artsists Respond to Genocide</h1>
       <p>How do individuals and communities cope with and respond to atrocity and trauma? What role does religion play in the perpetuation and resistance to genocide? What is our obligation as individuals and nations when confronted with such horrors? What is the role art plays in making sense of the present and past, and in communicating to the future? These are questions this seminar will ask as we read philosophy, fiction and poetry and view film and other visual art forms this semester. We will consider art from around the globe in order to understand the human response to horrors such as the Cambodian, Rwandan, and Bosnian genocides. Texts will include writing by Hannah Arendt, Primo Levi, and other writers from around the world. The course will work in tandem very well with the material offered in the history department course—Modern World History Seminar PPP: Bearing Witness: Genocide and its Aftermath, and students are encouraged to participate in both courses if their schedules permit.<br></br>
       <b>This semester-long course offered in the Fall fulfills the Public Purpose Program requirement for seniors.</b></p>
     </div>
 
-    <div data-role="collapsible">
+    <div class="folder" data-role="collapsible">
       <h1>English 4 Honors PPP: Ethnic Studies Through U.S. Literature</h1>
       <p>Ethnic Studies is the critical and interdisciplinary study of race, ethnicity, and indigeneity with a focus on the experiences and perspectives of people of color within and beyond the United States. This course is an introduction to Ethnic Studies through the study of literature. The first Ethnic Studies programs were created in 1969, after students and community members staged strikes at UC Berkeley and SFSU, and in the midst of immense social activism in the SF Bay Area. As such, we focus on fiction, poetry, nonfiction, art and music from that time in order to get an understanding of what mobilized the movement. Authors we study will include: Amiri Baraka, Audre Lorde, Vine Deloria, Jr., Gloria Anzaldúa, and Shawn Wong. We will examine how these texts engage with histories of colonialism, exclusion, and inequity in the U.S. Moreover, we will recognize how these writers engaged with each other’s work, demonstrating how communities formed alliances across racial and ethnic lines in their mobilization. In gaining a greater understanding of the political work of literature, we hope to acquire the critical apparatus and vocabulary for dealing with today’s struggles for justice. For the purposes of bridging academics and activism, this will be a PPP course that will require you to complete a community project.<br></br>
       <b>This semester-long course offered in the Spring fulfills the Public Purpose Program requirement for seniors.</b></p>
     </div>
 
-    <div data-role="collapsible">
+    <div class="folder" data-role="collapsible">
       <h1>English 4 Honors PPP: The Civil War and Reconstruction in American Imagination</h1>
       <p>In this course, we will explore how a diverse set of Americans have imagined war, resistance, and reconstruction as they wrote poetry, essays, short stories, and novels. Using Colson Whitehead’s novel The Underground Railroad, Toni Morrison’s Beloved, as well as Thomas Dixon Jr.’s The Clansman as roadmaps, we will explore how enslavement, resistance, war and the Reconstruction Era has impacted the imagination of American writers. We will also read diaries, essays, and short fiction by Mary Boykin Chestnut, Louisa May Alcott, and other selected writers. The course will also examine Civil War memorials in order to understand how different sets of people understood (and popularized) the story of the Civil War and Reconstruction. Excerpts from Eric Foner’s seminal work, Reconstruction, will also be studied as background for understanding historical context and the myths about the Reconstruction Era that still affect Americans today. Students will write literary analysis essays on each of the major texts studied as well as the capstone senior essay on a text of their choice.<br></br>
       <b>This semester-long course offered in the Spring fulfills the Public Purpose Program requirement for seniors.</b></p>
     </div>
 
-    <div data-role="collapsible">
+    <div class="folder" data-role="collapsible">
       <h1>English 4 Honors: Brave New Worlds</h1>
       <p>In this course, we’ll explore how various writers have imagined utopian worlds. Of course, one person’s utopia is another’s nightmare, so we’ll also explore how identity and historical context shape perspectives on what’s “good” or “ideal.” Starting with early modern visions of magical or utopian worlds such as Shakespeare’s The Tempest or Thomas More’s Utopia, we’ll then read more recent science fiction and fantasy, works that could include Nineteen Eighty-Four, Brave New World, and Neuromancer. Students will also be asked, in various creative assignments, to imagine what they want their future worlds to look like. For the final paper, students will choose a work of science fiction or fantasy to explore in greater depth.<br></br>
       <b>This semester-long course is offered in the Spring.</b></p>
     </div>
 
-    <div data-role="collapsible">
+    <div class="folder" data-role="collapsible">
       <h1>English 4 Honors: Gender and Sexuality in Literature</h1>
       <p>What do we mean when we say “gender” or “sex”? "Masculinity" or "femininity"? These categories, which play a fundamental role  in how we perceive ourselves and others, have become increasingly open to question in recent years, and the texts around us, from novels to films to popular media, often complicate rather than clarify our notions. In this course, we'll be exploring different literary representations of gender and sexuality. In particular, we'll be asking what literature and other cultural texts can reveal about background assumptions. How do language and images provide a window into the habits and norms of different cultures? By putting you, the reader, in a particular role—as voyeur, confidant, or judge—how do texts make you construct (and deconstruct) your own beliefs? Texts  could include Medea by Euripides, The Turn of the Screw by Henry James, The Handmaid’s Tale by Margaret Atwood, M. Butterfly by David Henry Hwang, and short stories by Ernest Hemingway, Junot Diaz, Sandra Cisneros, and James Baldwin.<br></br>
       <b>This semester-long course is offered in the Fall.</b></p>
@@ -107,7 +161,7 @@
       <p>Here is an example required <a href="https://www.lwhs.org/ftpimages/200/download/download_1930777.docx">Summer Reading</a> assignment for this English 4 class.</p>
     </div>
 
-    <div data-role="collapsible">
+    <div class="folder" data-role="collapsible">
       <h1>English 4 Honors: Race and Mixed Race in U.S. Literature</h1>
       <p>This course examines discourses of race and race mixing through American literature. We will be reading contemporary novels that represent people deemed as “mixed” race, such as Danzy Senna’s <i>Caucasia</i> and Celeste Ng’s <i>Everything I Never Told You</i>. We will buttress readings of literary texts with an understanding of how race has been historically constructed in the U.S., from Constitutional laws that determined that only “free white persons” were eligible for naturalization, to the coinage of categories such as “mulatto” and “mestizo,” to how U.S. Census categories are created and revised. Through reading theoretical and philosophical texts on racial formation and intersectionality, we will think through what happens when racial categories become blurred and contested in order to gain an understanding of race as a socially and historically situated construct that is always more complicated than what categories assume.<br></br>
       <b>This semester-long course is offered in the Fall.</b></p>
@@ -115,7 +169,7 @@
       <p>Here is an example required <a href="https://www.lwhs.org/ftpimages/200/download/download_1930778.docx">Summer Reading</a> assignment for this English 4 class.</p>
     </div>
 
-     <div data-role="collapsible">
+     <div class="folder" data-role="collapsible">
       <h1>English 4 Honors: William Shakespeare and Mark Twain, Where is Wisdom Found?</h1>
       <p>In this honors senior seminar, we will explore the work of two great masters, iconoclasts and disruptive thinkers as they explore the human tragicomedy. The work of each of these writers transformed their national literature. Each writer invented a new way to voice a story and explore experience. Each was a profound social critic, a revolutionary, and yet was lionized by society. We will read at least two plays by William Shakespeare and one novel and some essays by Mark Twain. Through close reading, we will analyze word, image, and world in their work. Students will give dramatic readings and presentations of plays and poems. Be ready to be on your feet! Be ready to find the power of words with all of your senses and wits, to dive beyond appearance into a word’s and a moment’s triple meanings. The work of the class will include critical essays on the role of literature in society, on social justice and the subaltern perspective; we will read Ta-Nihisi Coates’ political treatise and Claudia Rankine’s lyrics. Students will be asked to write both critical and creative essays. In the wit and insights found in plays, voyages, novels, short stories, essays, and poetry, we will hunt wisdom to understand the past and the present.<br></br>
       <b>This semester-long course is offered in the Fall.</b></p>
@@ -123,7 +177,7 @@
       <p>Here is an example required <a href="https://www.lwhs.org/ftpimages/200/download/download_1930779.docx">Summer Reading</a> assignment for this English 4 class.</p>
     </div>
 
-    <div data-role="collapsible">
+    <div class="folder" data-role="collapsible">
       <h1>English 4 Honors:The Play of Words, Reading and Writing The Short Story</h1>
       <p>The Play of Words is primarily a short story writing workshop; students glean skills from contemporary and less contemporary short story writers and practice them in their own work. Salmon Rushdie suggests, “We all live in and with and by stories, every day, whoever and wherever we are. The freedom to tell each other the stories of ourselves, to retell the stories of culture and beliefs, is profoundly connected to the larger subject of freedom itself.” We will read classic and contemporary short stories by such authors as Nabokov, Munro, Cheever, July, Hawthorne, Alexie, Keret, Gaines, Saunders, Moore, Hemingway, Conrad, Lahiri, Sedaris, Yiyun Li, Raboteau, Dillard, Wolff, Woolf, Russell, Egan, Chekhov, and Carver. Students will write critical analysis to sharpen their instinct for words and to explore craft. From the first day of class, students will work on their own creative writing practice, experimenting with techniques in the writing toolbox. They will write more than a dozen short sketches and at least two complete original short stories. At the end of the semester, we will publish an anthology of students’ work.<br></br>
       <b>This semester-long course is offered in the Spring.</b></p>
@@ -131,7 +185,7 @@
 
   </div>
 
-  <div data-role="footer">
+  <div id="foot" data-role="footer">
     <h1></h1>
   </div>
 </div> 

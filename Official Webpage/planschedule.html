@@ -283,10 +283,29 @@
 
 	<style>
 		body {
-			background-color: #beefed;
-			width: 100%; 
-			height: 100%; 
-			margin: 1px;
+			background-color: #eae0d5;
+	 width: 100%; 
+	 height: 100%; 
+	 margin: 1px;
+	 /* Old browsers */
+background: -moz-linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+/* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+/* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+		}
+
+		#page {
+			background-color: #eae0d5;
+	 width: 100%; 
+	 height: 100%; 
+	 margin: 1px;
+	 /* Old browsers */
+background: -moz-linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+/* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+/* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
 		}
 
 		table th,table td{
@@ -300,6 +319,8 @@
 			padding: 3px;
 			font-family: Georgia;
 		}
+
+		
 
 		table th {
 			color: MidnightBlue;
@@ -335,6 +356,13 @@
 			width: 300px;
 			text-align: center;
 			overflow-y: auto;
+			background-color: #eae0d5;
+   /* Old browsers */
+background: -moz-linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+/* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+/* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
 		}
 
 		.dropin {
@@ -356,7 +384,7 @@
 	</style>
 </head>
 <body>
-	<div data-role="page">
+	<div id="page" data-role="page">
 
 		<h1>Class Schedule Planner</h1>
 		<h3>Choose your grade, then drag and drop classes from the categories on left into the open slots in the table.</h3>

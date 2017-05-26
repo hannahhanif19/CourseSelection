@@ -6,26 +6,80 @@
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
-<style> body {padding: 0; margin: 0;} canvas {vertical-align: top;} div {background-color: #beefed;} h1{background-color: #ffe599;}</style>
+<style> 
+  body {
+  background-color: #eae0d5;
+   width: 100%; 
+   height: 100%;
+   /* Old browsers */
+background: -moz-linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+/* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+/* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+  } 
+
+  .ui-content {
+    position: relative;
+      padding-top: 110px;
+      background-color: #eae0d5;
+   width: 100%; 
+   height: 100%;
+   /* Old browsers */
+background: -moz-linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+/* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+/* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+  }
+
+  #col {
+      background-color: #eae0d5;
+      text-transform: uppercase;
+   width: 100%; 
+   height: 90px;
+   line-height: 50px;
+   position: fixed;
+   z-index: 2;
+   /* Old browsers */
+background: -moz-linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+/* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+/* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+
+    }
+
+  .folder {
+    max-width: 75%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  #foot {
+    padding: 5px;
+  }
+</style>
 </head>
 <body>
 
 
 
 <div data-role="page">
-  <div data-role="header">
-    <h1 id="col">SCIENCE COURSES</h1>
+  <div id="col" data-role="header">
+    <h1 style="font-size: 30px;">Science Courses</h1>
   </div>
 
   <div data-role="main" class="ui-content">
-      <div data-role="collapsible">
+      <div class="folder" data-role="collapsible">
       <h1>Overview</h1>
       <p>Science empowers students to share in the joy of comprehending the natural world. Science is a way of thinking, a process—much more than a collection of facts. Students discover content through inquiry, curiosity, and exploration. Students will ask questions, design experiments, and analyze data. They will also learn to look at concepts from multiple perspectives and relate science to everyday experiences. Classes offer a mix of discussions, group work, lab experiments, lectures, and projects. Examples, analogies, and lab experiments help students discover and apply concepts. The learning environment is collaborative, enriched by varied learning styles and life experiences. Students also consider the political, ethical, and social dimensions of the subject matter. Students take Biology in the 9th grade and Chemistry in the 10th grade. In the 11th and 12th grades, students can choose among the elective offerings. We encourage students to make a four year plan and discuss their choices and goals with teachers and advisors.</p>
 
       <p>*Please note that all courses listed are in order of <b>availabilty to the advancing grade levels.</b></p>
     </div>
 
-    <div data-role="collapsible">
+    <div class="folder" data-role="collapsible">
       <h1>Biology</h1>
       <p>Biology is the study of life, from the molecular level to entire ecosystems. In this survey course, we emphasize the unifying themes of evolution, the interconnectedness of life, and the moral and social implications of scientific issues. Topics include ecology, evolution, cell theory, diversity of life, genetics, and DNA, as well as reproduction. These concepts are presented through laboratory experimentation, simulations, discussion, and debates. They are reinforced with questions, examples, analogies, and applications. Lab work encourages a sense of inquiry, organization, and interpretation.</p>
 
@@ -34,7 +88,7 @@
       <a href="https://www.lwhs.org/ftpimages/200/download/download_2066069.docx">Sample Syllabus #2 | Rizzi</a>
     </div>
 
-    <div data-role="collapsible">
+    <div class="folder" data-role="collapsible">
       <h1>Chemistry</h1>
       <p>In Chemistry, students explore the properties and transformations of matter. Through frequent demonstrations, laboratory experiments, interactive group discussions, and collaboration with peers, students learn the principles that underlie chemical change and learn to cultivate an attitude of inquiry about the chemical phenomena they experience in the world around them. Emphasis is placed on developing the skills necessary to design and conduct meaningful scientific investigations, interpret data and clearly communicate the results. Students are expected to reflect on the scientific process in order to deepen their understanding of the natural world and to assess the credibility of scientific information encountered in the media. <br></br>Prerequisite: Biology</p>
 
@@ -44,7 +98,7 @@
       <a href="https://www.lwhs.org/ftpimages/200/download/download_2066078.docx">Sample Syllabus #3 | Riem</a>
     </div>
 
-    <div data-role="collapsible">
+    <div class="folder" data-role="collapsible">
       <h1>Honors Biology: Anatomy & Physiology</h1>
       <p>This advanced biology course is an in depth exploration of systems of the human body. It includes units on the muscular, skeletal, digestive, circulatory, respiratory, immune, nervous, endocrine, and reproductive systems. There is a focus on stress physiology and the effects of drug, alcohol, and tobacco on the body. Each system is examined through extensive laboratory activities and enriched with current internet and school library research. In addition, students consider implications for personal health and conduct debates about issues of medical ethics. The aim of the course is to foster an appreciation of the intricate relationship between structure and function in the human body and to make the subject matter relevant and helpful to students’ lives.<br></br>Prerequisite: Biology and Chemistry.</p>
 
@@ -52,7 +106,7 @@
       <a href="https://www.lwhs.org/ftpimages/200/download/download_2066064.docx">Sample Syllabus | Maslow</a>
     </div>
 
-    <div data-role="collapsible">
+    <div class="folder" data-role="collapsible">
       <h1>Honors Biology: Classical and Behavioral</h1>
       <p>Classical and Behavioral Genetics is an advanced biology course that focuses on the connection between individual genes and the wide range of traits they can influence. We start with an exploration of Mendelian inheritance and fruit fly genetics, following traits across multiple generations to study the linkage mapping of chromosomes. We explore how fruit flies have been a crucial model organism for a wide range of disciplines including developmental biology, evolutionary biology, and the study of behaviors ranging from long term memory and alcohol tolerance to mating rituals and sleep cycles. We then consider genes as the unit of natural selection throughout the history of the animal kingdom, and as we read Richard Dawkins’ The Selfish Gene. We will also look at recent analysis of the human genome and the discovery of genes that connect to complex human behaviors. A question we will consider throughout is, “What, if anything, makes humans unique?”<br></br>Prerequisites: Biology and Chemistry. May be taken in conjunction with Molecular Genetics and Ethics.</p>
 
@@ -60,21 +114,21 @@
       <a href="https://www.lwhs.org/ftpimages/200/download/download_2066076.docx">Sample Syllabus | Krukowski</a>
     </div>
 
-    <div data-role="collapsible">
+    <div class="folder" data-role="collapsible">
       <h1>Honors Biology: Molecular Genetics and Ethics</h1>
       <p>Molecular Genetics and Ethics is an advanced biology course that focuses attention on the major themes of modern biology. Topics will be chosen to help students understand the themes of current biological research, including genetics of cancer and aging, epigenetics, gene technology and genomics, gene regulation, and the genetic evidence for evolution. A question we will consider throughout the course is, “How does the rapidly growing and changing field of modern genetics affect us as a society?” Labs will illuminate a variety of molecular genetic techniques. Projects will include independent and group research, that will explore current ethical issues connected to the use and discovery of current technologies. We will also discuss the aesthetics and clarity of scientific writing, and how complex concepts are communicated successfully or further muddied.<br></br>Prerequisites: Biology and Chemistry. May be taken in conjunction with Classical and Behavioral Genetics.</p>
 
       <p><b>This semester-long course offered in the Spring is a UC approved honors lab science.</b></p>
     </div>
 
-    <div data-role="collapsible">
+    <div class="folder" data-role="collapsible">
       <h1>Honors Chemistry</h1>
       <p>Honors Chemistry expands on the foundational knowledge developed in the 10th grade chemistry course by investigating the properties of gas, equilibrium, acid/base, electrochemical, and organic reactions. Students will explore these reactions from both a qualitative and quantitative perspective, including the kinetics and thermodynamics of their behaviors. Emphasis is placed on understanding how bonding and molecular shape affect chemical properties, conducting rigorous experimental analysis, and synthesizing skills from all areas of the course to address complex problems. Through frequent exploration of the connections between class material, current research, and challenges faced by modern society, students also develop proficiency in applying their knowledge to better understand the pressing science issues and promises of our time.<br></br>Prerequisites: Biology and Chemistry.</p>
 
       <p><b>This year-long course is a UC approved honors lab science.</b></p>
     </div>
 
-    <div data-role="collapsible">
+    <div class="folder" data-role="collapsible">
       <h1>Environmental Science</h1>
       <p>This course investigates the role of humans in their environment. Students will learn and understand their biological and physical environment, explore human dependences on and controls over the environment, reflect on how to sustain resources, and make informed choices concerning environmental issues. Students will examine the interconnection of earth's systems by investigating the flow of energy, cycle of matter, history and dynamics of the earth, atmosphere, and biosphere. Students will study human population dynamics, such as global distribution, carrying capacity, and cultural and economic influences.</p>
       <p>We will focus on food and the environment—taking care of the land, feeding people, and the ecological, social and political systems that help to bring food to the table. Food can be a solution to a diversity of environmental problems. Sustainable food yield and distribution can eliminate famine, reduce land degradation and loss of biodiversity, and minimize climate change. Students, in small groups, may conduct a long term field study and several short term experiments.<br></br>Prerequisites: Biology and Chemistry.</p>
@@ -82,7 +136,7 @@
       <p><b>This semester-long course offered in the 2017 is a UC approved honors lab science.</b></p>
     </div>
 
-    <div data-role="collapsible">
+    <div class="folder" data-role="collapsible">
       <h1>Marine Ecology PPP: Semester Field and Lab Science</h1>
       <p>Marine Ecology is an advanced interdisciplinary science course that builds upon and extends biological and chemical concepts developed during grades 9 and 10. The world's oceans cover over 70% of the earth's surface and are integrally tied to the health of the planet. A deep understanding of marine ecology is critical for the appreciation, preservation, and protection of marine habitats. Students study physical oceanography, chemistry, geology, and marine biology; understanding the connections between the abiotic and biotic processes of marine ecosystems. Students understand the physical and chemical characteristics of a few selected marine ecological zones (littoral, pelagic, and neritic) and investigate the anatomy, behavior, and evolutionary adaptations of a variety of life within each.</p>
 
@@ -91,7 +145,7 @@
       <p><b>This semester-long course offered in the Spring is a UC approved lab science that fulfills the Public Purpose Program requirement for juniors and seniors.</b></p>
     </div>
 
-    <div data-role="collapsible">
+    <div class="folder" data-role="collapsible">
       <h1>Physics</h1>
       <p>Physics is a symphony of elegance and simplification. A surprisingly few “laws” or principles successfully describe phenomena ranging from the everyday to the exotic, from the microscopic to cosmic realms. Students are encouraged to question their prior experiences and understandings, and build a robust framework with which to view the universe. Labs and demonstrations provide experimental data, sometimes leading to new and surprising revelations. Because some principles are intimately expressed as mathematical relationships, students will deepen their understanding by applying equations to challenging problems. Students in this course should gain an insightful and intuitive understanding of the principles of physics, supported by readings in historical development and implications. Students will also develop skills in visualization and modeling of quantitative data. General topics include motion in one and two dimensions, momentum, energy, electricity, magnetism, sound, and light.<br></br>Prerequisites: Biology and Chemistry.<br></br>Minimun corequisite: Algebra 2</p>
 
@@ -100,7 +154,7 @@
       <a href="https://www.lwhs.org/ftpimages/200/download/download_2066084.pdf">Sample Syllabus #2 | Nyeggen</a>
     </div>
 
-    <div data-role="collapsible">
+    <div class="folder" data-role="collapsible">
       <h1>Honors Physics</h1>
       <p>In Honors Physics, students reinforce and expand their understanding of physics. Students are expected to employ more advanced mathematical tools, including differential and integral calculus. Much of the curriculum emphasizes sophisticated problems in mechanics. Additionally, students build on their first year physics knowledge by delving more deeply into topics such as light, optics, relativity, quantum mechanics, and astronomy. Lab work, computer simulation, and demonstrations continue to anchor concepts and principles with quantitative data.<br></br>Prerequisites: Physics, and completion or concurrent enrollment in Calculus.</p>
 
@@ -108,7 +162,7 @@
       <a href="https://www.lwhs.org/ftpimages/200/download/download_2066083.docx">Sample Syllabus | Friedman</a>
     </div>
 
-    <div data-role="collapsible">
+    <div class="folder" data-role="collapsible">
       <h1>Psychology: Brain and Behavior</h1>
       <p>Using multiple perspectives, we will look at human behavior from the biological, evolutionary, cognitive, behavioral, psychodynamic, humanistic, social, and sociocultural points of view. An emphasis is put on how the physical brain, the environment, and human behavior continually interact and influence each other. Students examine readings and experiments on learning, social interactions, memory, thinking, and cognitive development. Genetic and environmental factors underlying development and attachment are also considered. The course is an invitation for introspection and expression as students agree, disagree, and take what is helpful to them and make it their own. There is an emphasis on multiple learning styles; individual projects provide the opportunity for students to explore topics of their choice in more depth.</p>
 
@@ -120,7 +174,7 @@
 
   </div>
 
-  <div data-role="footer">
+  <div id="foot" data-role="footer">
     <h1></h1>
   </div>
 </div> 

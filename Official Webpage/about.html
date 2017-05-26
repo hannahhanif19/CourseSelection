@@ -3,32 +3,6 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <script type="text/javascript">
-    function darken1() {
-    document.getElementById("usrimg").style.opacity = "1";
-}
-
-function light1() {
-    document.getElementById("usrimg").style.opacity = "0.7";
-}
-    
-    function darken2() {
-    document.getElementById("deptimg").style.opacity = "1";
-}
-
-function light2() {
-    document.getElementById("deptimg").style.opacity = "0.7";
-}
-
-function darken3() {
-    document.getElementById("planimg").style.opacity = "1";
-}
-
-function light3() {
-    document.getElementById("planimg").style.opacity = "0.7";
-}
-  </script>
-
 	<style> h1 {font-family:georgia; font-size:32px; font-weight: normal;} 
 
 	body {
@@ -58,13 +32,17 @@ background: linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
 			font-family:Georgia; 
 			max-width: 800px;
 			margin: 0 auto;
-			margin-top: 30px;
+			margin-top: 50px;
 			margin-bottom: 30px;
+      line-height: 30px;
+      background-color: transparent;
 		}
 
 		.container {
   position: relative;
   margin: 0 auto;
+  width: 94%;
+  max-width: 1100px;
 }
 .content {
   position: relative;
@@ -79,7 +57,7 @@ background: linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
   width: 100%;
   height: 90px;
   line-height: 90px;
-  background-color: #beefed;
+  background-color: #f7f7f7;
 	 /* Old browsers */
 background: -moz-linear-gradient(45deg, #f7f7f7 0%, #000 100%);
 /* FF3.6-15 */
@@ -96,7 +74,7 @@ background: linear-gradient(45deg, #f7f7f7 0%, #000 100%);
 }
 #nav {
   position: absolute;
-  right: 90px;
+  right: 0;
   top: -15px;
   height: 60px;
 }
@@ -115,74 +93,19 @@ background: linear-gradient(45deg, #f7f7f7 0%, #000 100%);
   width: 300px;
   height:150px;
   position: absolute;
-  left: 70px;
+  left: -20px;
   top:-27px;
 }
 
 #title {
   position: absolute;
-  left: 390px;
+  left: 300px;
   font-size: 35px !important;
 }
 
-#user {
-  display: inline-block;
-  position: fixed;
-  top:90px;
-  height: 100%;
-  overflow: hidden;
-  background-color: #beefed;
-}
-
-#usrimg {
-  opacity: 0.7;
-  height: 100%;
-}
-
-#dept {
-  display: inline-block;
-  position: fixed;
-  top:90px;
-  left: 33%;
-  height: 100%;
-  overflow: hidden;
-  background-color: #aaafad;
-}
-
-#deptimg {
-  opacity: 0.7;
-  height: 100%;
-}
-
-#plan {
-  display: inline-block;
-  position: fixed;
-  top: 90px;
-  left: 66%;
-  height: 100%;
-  overflow: hidden;
-  background-color: #deacfd;
-  margin: 0 auto;
+#credit {
+  margin: 77px auto;
   text-align: center;
-}
-
-#planimg {
-  opacity: 0.7;
-  height: 100%;
-  z-index: 1;
-}
-
-.textlink {
-  position: absolute;
-  width: 200px;
-  line-height: 50px;
-  font-family: Georgia;
-  font-weight: bold;
-  color: MidnightBlue;
-  font-size: 35px;
-  z-index: 2;
-  text-align: center;
-  display: inline-block;
 }
 
 	</style>
@@ -215,34 +138,13 @@ background: linear-gradient(45deg, #f7f7f7 0%, #000 100%);
 </div>
 </header>
 
-
-
 <div class="content">
   <div class="container">
 
-	<div>
+	<i><p id="intro" align="center"> This is the new and improved course selection page that allows students to find everything they are looking for during course signups all in one place. This page includes a login and sign up section so that students can save their work, a departments page that includes all the subjects and the courses offered at Lick, and a scheduling page which references to graduation requirements and an interactive course planner for the upcoming year.</p></i>
 
-    <a href="userinfo.html">
-      <div id="user" onmouseover="darken1()" onmouseout="light1()">
-        <span class="textlink">User Info</span>
-        <img id="usrimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Gray_-_replace_this_image_male.svg/2000px-Gray_-_replace_this_image_male.svg.png"/>
-    </div>
-    </a>
+  <h2 id="credit">Created by Hannah Hanif and Abraham Corea Diaz<br/>Class of 2019<br/><br/>Computing 2 - 2017</h2>
 
-<a href="departments.html">
-  <div onmouseover="darken2()" onmouseout="light2()" id="dept">
-    <span class="textlink">Classes and Departments</span>
-    <img id="deptimg" src="https://cdn.pixabay.com/photo/2016/02/02/05/54/file-1174819_960_720.png"/>
-  </div>
-  </a>
-
-<a href="planschedule.html">
-  <div id="plan" onmouseover="darken3()" onmouseout="light3()">
-    <span class="textlink">Plan Your Schedule</span>
-    <img id="planimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Calendar_Icon.svg/2000px-Calendar_Icon.svg.png"/>
-  </div></a>
-
-	</div>
   </div>
 </div>
 

@@ -6,19 +6,73 @@
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
-<style> body {padding: 0; margin: 0;} canvas {vertical-align:top;} div {background-color: #beefed;}                  h1{background-color: #ffe599;}</style>
+<style> 
+  body {
+  background-color: #eae0d5;
+   width: 100%; 
+   height: 100%;
+   /* Old browsers */
+background: -moz-linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+/* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+/* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+  } 
+
+  .ui-content {
+    position: relative;
+      padding-top: 110px;
+      background-color: #eae0d5;
+   width: 100%; 
+   height: 100%;
+   /* Old browsers */
+background: -moz-linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+/* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+/* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+  }
+
+  #col {
+      background-color: #eae0d5;
+      text-transform: uppercase;
+   width: 100%; 
+   height: 90px;
+   line-height: 50px;
+   position: fixed;
+   z-index: 2;
+   /* Old browsers */
+background: -moz-linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+/* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+/* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+
+    }
+
+  .folder {
+    max-width: 75%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  #foot {
+    padding: 5px;
+  }
+</style>
 </head>
 <body>
 
 
 
 <div data-role="page">
-      <div data-role="header">
-    <h1 id="col">WORLD LANGUAGE COURSES</h1>
+      <div id="col" data-role="header">
+    <h1 style="font-size: 30px;">World Language Courses</h1>
   </div>
 
   <div data-role="main" class="ui-content">
-    <div data-role="collapsible">
+    <div class="folder" data-role="collapsible">
       <h1>Overview</h1>
       <p>In an increasingly interdependent world, communication and interaction with people in their own languages help build positive relationships. In addition to the practical benefits of speaking other languages, knowledge of another language encourages different ways of viewing the world we share. Community and business organizations name cross-cultural competency as a vital 21st century skill. LWHS is committed to fostering students’ proficiency in another language, as demonstrated by the depth of the curriculum and the length of study required—three years of study in one language or two years of study in each of two different languages. A level 4 or 4 Honors class is offered in all languages.
       <p>The culturally diverse faculty develop four basic language skills (listening, speaking, reading, and writing) while exploring the cultural contributions of diverse regions united by a common language. Teachers use a dynamic approach that incorporates a broad array of materials, such as up-to-date texts and workbooks, classic and contemporary literature, films and shorts, documentaries, current events, internet sources, and music. Class activities (designed to address various learning styles) may include pair and small group work, games, student led classes, student presentations, skits and role plays, student made videos, research projects, internet based projects, and interaction and collaboration with community and international organizations.</p>
@@ -26,14 +80,14 @@
       <p>In addition, here is more iformation on <a href="https://www.lwhs.org/ftpimages/200/download/download_1730297.pdf">Course Sequences</a> and <a href="https://www.lwhs.org/ftpimages/200/download/download_2263917.pdf">World Languages FAQ</a>.</p>
       </div>
 
-      <div data-role="collapsible">
+      <div class="folder" data-role="collapsible">
       <h1>Chinese 1</h1>
       <p>Chinese 1 is the foundation course for the study of Mandarin Chinese. It is designed for students who have had little or no previous study of the language. Through various classroom activities, students develop rapid comprehension of spoken Mandarin Chinese, correct pronunciation (pinyin) and intonation, as well as the ability to read, write, and speak basic Mandarin Chinese. This course develops students’ basic communication in the context of contemporary Chinese culture and daily life. Students learn to read and write using the pinyin alphabet, simplified Chinese characters, and selected traditional Chinese characters. Students apply their language and cultural knowledge through integrative projects and oral presentations. The textbook <i>Ni Hao</i> is the primary resource, along with teacher generated materials. Mandarin Chinese is the primary language of instruction. This is a UC eligible course.</p>
       <p><b>This is a year-long course.</b></p>
       <a href="https://www.lwhs.org/ftpimages/200/download/download_2066145.docx">Sample Syllabus | Yao</a>
       </div>
 
-      <div data-role="collapsible">
+      <div class="folder" data-role="collapsible">
       <h1>Chinese 2</h1>
       <p>Chinese 2 builds upon and extends the foundations developed in Chinese 1. Language skills are broadened within a cultural context. This course expands on students’ ability to communicate everyday activities, current events and culture by delving into a deeper scope of topics explored in the first year and introducing new topics. Cultural topics include analyzing and discussing Chinese practices and values in the context of a film. Students will also be introduced to the culture via supplemental readings. Students further develop their reading and writing using the pinyin alphabet, simplified Chinese characters, and traditional Chinese characters. Goals include correct and appropriate use of vocabulary and structured grammar. The textbook <i>Chinese Link, Level One, Part One,</i> serves as the primary resource, along with teacher generated materials. Mandarin Chinese is the primary language of instruction. This is a UC eligible course.</p>
       <p>Prerequisite: Chinese 1. Incoming students must take a placement examination and be interviewed.</p>
@@ -41,7 +95,7 @@
       <a href="https://www.lwhs.org/ftpimages/200/download/download_2066146.docx">Sample Syllabus | Liu</a>
       </div>
 
-      <div data-role="collapsible">
+      <div class="folder" data-role="collapsible">
       <h1>Chinese 3</h1>
       <p>Chinese 3 builds upon and extends the foundations developed in Chinese 2. In this class, students will continue to use all the activities and tools for developing language skills in a cultural context. Students develop their ability to communicate about everyday activities, current events, and culture. Students continue to refine reading and writing using all modes. This course places an emphasis on supplemental vocabulary, more advanced texts, improved composition skill by adding advanced phrases and grammar structures, as well as expressions of opinion. Students apply their language and cultural knowledge through integrative projects and oral presentations. The textbook <i>Chinese Link, Level One, Part Two,</i> serves as the primary resource, along with teacher generated materials. Mandarin Chinese is the sole language of instruction. This is a UC eligible course.</p>
       <p>Prerequisite: Chinese 2. Incoming students must take a placement examination and be interviewed.</p>
@@ -49,7 +103,7 @@
       <a href="https://www.lwhs.org/ftpimages/200/download/download_2066148.docx">Sample Syllabus | Yao</a>
       </div>
 
-      <div data-role="collapsible">
+      <div class="folder" data-role="collapsible">
       <h1>Chinese 4 Honors PPP</h1>
       <p>Chinese 4 Honors extends the foundation developed in previous levels and improves students' ability to communicate in the context of contemporary Chinese culture. Students analyze readings in the textbook, as well as historic idiom stories and classic novels. Students communicate in great depth about everyday activities, current events, and culture. Students further expand on their abilities to read and write in all modes. Chinese 4H emphasizes more advanced texts and improved composition skills. Students apply their language and cultural knowledge through integrative projects and oral presentations. The series <i>Chinese Link, College Intermediate level,</i> serves as the primary resource, along with teacher generated materials. Mandarin Chinese is the sole language of instruction. This is a UC eligible course.</p>
       <p>Prerequisites: Chinese 3. Incoming students must take a placement examination and be interviewed.</p>
@@ -57,14 +111,14 @@
       <a href="https://www.lwhs.org/ftpimages/200/download/download_2066150.pdf">Sample Syllabus | Liu</a>
       </div>
 
-      <div data-role="collapsible">
+      <div class="folder" data-role="collapsible">
       <h1>French 1</h1>
       <p>French 1 is the foundation course for the study of French. It is designed for students who have had some or no previous study of the language. Through various classroom activities and multimedia resources, students develop correct pronunciation and intonation, the ability to read and write basic French, and rapid comprehension of spoken French. Goals include descriptions, vocabulary of daily life, and basic present, future, and past tenses. The textbook Bon Voyage, Level One serves as the primary resource, along with teacher generated materials. Over the course of the year, French becomes the primary language of instruction, with bilingual support. This is a UC eligible course.</p>
       <p><b>This is a year-long course.</b></p>
       <a href="https://www.lwhs.org/ftpimages/200/download/download_2066151.doc">Sample Syllabus | Pitsker</a>
       </div>
 
-      <div data-role="collapsible">
+      <div class="folder" data-role="collapsible">
       <h1>French 2</h1>
       <p>French 2 builds upon and extends the foundations developed in French 1. Grammatical structures, reading comprehension, writing practice, and conversation are taught within a cultural context. Goals include mastery of all indicative tenses, object pronouns, and expansion of vocabulary of daily life and travel. Internet lessons, films, and literature will deepen students' knowledge of francophone culture. Students develop oral skills through group podcasts and oral presentations. The textbook Discovering French Blanc, Level Two serves as the primary resource, along with teacher-generated materials. French is the primary language of instruction, with minimal bilingual support. This is a UC eligible course.</p>
       <p>Prerequisite: French 1. Incoming students must take a placement examination and be interviewed.</p>
@@ -72,7 +126,7 @@
       <a href="https://www.lwhs.org/ftpimages/200/download/download_2066152.doc">Sample Syllabus | Pitsker</a>
       </div>
 
-      <div data-role="collapsible">
+      <div class="folder" data-role="collapsible">
       <h1>French 3</h1>
       <p>In the third year of French, the study of basic grammatical structures is completed and consolidated using a variety of materials, including art, contemporary music, and feature films. Students expand their cultural knowledge through research projects and oral presentations. Goals include mastery of pronouns, conditional phrases, and the subjunctive mood. Vocabulary expansion includes communicating in social situations, asking for services, and expressing emotions and needs. Students learn techniques for analyzing literature, art, and music, and contribute regularly to a blog. They develop greater oral proficiency through presentations on artists and musicians. The textbook Discovering French Rouge, Level Three serves as the primary resource, along with teacher generated materials. French is the sole language of instruction. This is a UC eligible course.</p>
       <p>Prerequisite: French 2. Incoming students must take a placement examination and be interviewed.</p>
@@ -80,14 +134,14 @@
       <a href="https://www.lwhs.org/ftpimages/200/download/download_2066153.doc">Sample Syllabus | Pitsker</a>
       </div>
 
-      <div data-role="collapsible">
+      <div class="folder" data-role="collapsible">
       <h1>French 4</h1>
       <p>This course is designed for students who have reached a high intermediate level of proficiency in written and spoken French. Students develop fluency in speaking and writing as they examine France and francophone cultures through current events, films, songs, and literature. The class will expand grammatical knowledge through written and oral activities. Students broaden their skills in French literary analysis and in summarizing information from authentic resources, using level appropriate structures and vocabulary. They engage in class discussion and spontaneous conversations, write short essays, do research, and give brief oral presentations. Resources include Trésors du Temps, literary texts, news articles, and teacher generated materials. French is the sole language of instruction. This is a UC eligible course.</p>
       <p>Prerequisites: French 3. Incoming students must take a placement examination and be interviewed.</p>
       <p><b>This is a year-long course.</b></p>
       </div>
 
-      <div data-role="collapsible">
+      <div class="folder" data-role="collapsible">
       <h1>French 4 Honors PPP</h1>
       <p>This advanced course is designed for students who have reached a high intermediate to advanced level of proficiency in written and spoken French. Through thematic units organized around essential questions, students explore history, culture, and literature through the lens of social justice in the post Enlightenment francophone world. Students discuss and write in both research and reflective modes, developing greater accuracy and honing their ability to craft an argument. Students are largely self directed as they examine primary sources, become class experts on topics of their choice, and share their discoveries with classmates through oral presentations and discussions. Resources include the textbook Une Fois pour toutes, a variety of literary texts, news articles, films, and teacher-generated materials. French is the sole language of instruction. This is a UC eligible course.</p>
       <p>Prerequisites: French 3. Incoming students must take a placement examination and be interviewed.</p>
@@ -95,14 +149,14 @@
       <a href="https://www.lwhs.org/ftpimages/200/download/download_2066154.pdf">Sample Syllabus | Pitsker</a>
       </div>
 
-      <div data-role="collapsible">
+      <div class="folder" data-role="collapsible">
       <h1>Spanish 1</h1>
       <p>This introductory course is designed for students who have had some or no previous study of Spanish. Students develop correct pronunciation and intonation, and the ability to read, write, and comprehend basic Spanish. Goals include present and past tenses, descriptions, and vocabulary of daily life. Teacher generated materials serve as the primary resource. Spanish is the primary language of instruction. This is a UC eligible course.</p>
       <p><b>This is a year-long course.</b></p>
       <a href="https://www.lwhs.org/ftpimages/200/download/download_2066159.docx">Sample Syllabus | Zapatero</a>
       </div>
 
-      <div data-role="collapsible">
+      <div class="folder" data-role="collapsible">
       <h1>Spanish 1 Accelerated</h1>
       <p>Spanish 1 Accelerated is designed for students who have some background knowledge of Spanish, but who have not yet mastered enough of the first year material to succeed at the next level. This class provides a thorough review of the basics, and demands earlier use of Spanish in the classroom, longer readings, audio listening activities, more in depth grammar, and more challenging dialogues and improvisations than the regular Spanish 1 curriculum. Teacher generated materials serve as the primary resource. Spanish is the primary language of instruction. This is a UC eligible course.</p>
       <p>Prerequisites: Incoming students must take a placement examination and be interviewed.</p>
@@ -110,7 +164,7 @@
       <a href="https://www.lwhs.org/ftpimages/200/download/download_2066160.doc">Sample Syllabus | Hernandez</a>
       </div>
 
-      <div data-role="collapsible">
+      <div class="folder" data-role="collapsible">
       <h1>Spanish 2</h1>
       <p>The main objective of Spanish 2 is to create a bridge between elementary and advanced Spanish. Students become language practitioners as they strive for spontaneous oral production on a daily basis. In order to reinforce and maintain a strong grammar foundation, students begin with a review of Spanish 1 material. Subsequent goals include vocabulary expansion, knowledge of all verb tenses of the indicative mood, and discussion of cultural topics through films, literature and music. Students are introduced to the present subjunctive with influence, emotion, doubt and denial. Students are expected to use only Spanish for all interactions inside of the class. This is a UC eligible course.</p>
       <p>Prerequisites: Spanish 1 or 1A. Incoming students must take a placement examination and be interviewed.</p>
@@ -118,7 +172,7 @@
       <a href="https://www.lwhs.org/ftpimages/200/download/download_2066161.docx">Sample Syllabus | Reyes</a>
       </div>
 
-      <div data-role="collapsible">
+      <div class="folder" data-role="collapsible">
       <h1>Spanish 2 Accelerated</h1>
       <p>Spanish 2 Accelerated is designed for students who have demonstrated a mastery of the grammar and vocabulary of Spanish 1 or 1 Accelerated in both their written and oral communications. In this course, students enhance their communicative skills with a focus on vocabulary expansion, a firm grasp of advanced grammatical structures, and an understanding of the uses of the indicative, imperative, and subjunctive moods. Students read authentic text by Latin American and Spanish authors and journalists, as well as view and analyze films. The class is primarily instructed in Spanish. This is a UC eligible course.</p>
       <p>Prerequisites: Spanish 1 or 1A. Incoming students must take a placement examination and be interviewed.</p>
@@ -126,7 +180,7 @@
       <a href="https://www.lwhs.org/ftpimages/200/download/download_2066162.docx">Sample Syllabus | Bethencourt</a>
       </div>
 
-      <div data-role="collapsible">
+      <div class="folder" data-role="collapsible">
       <h1>Spanish 3 Honors</h1>
       <p>Spanish 3 Honors completes the study of advanced grammar concepts while continuing to develop student language skills within a cultural and literary context. Students use extensive vocabulary and complex language structures to read, analyze, and discuss articles and literary works by renowned authors that explore the global themes of identity, contemporary social issues and arts. Students write short stories and essays, as well as work independently or in groups on a variety of oral presentations and projects. Extensive work with listening activities, movies, informal and formal cultural conversations strengthen student conceptual thinking and build fluency throughout the year. The class is taught in Spanish. This is a UC eligible course.</p>
       <p>Prerequisites: Spanish 2 or 2A. Incoming students must take a placement examination and be interviewed.</p>
@@ -134,7 +188,7 @@
       <a href="https://www.lwhs.org/ftpimages/200/download/download_2066166.docx">Sample Syllabus | Bethencourt</a>
       </div>
 
-      <div data-role="collapsible">
+      <div class="folder" data-role="collapsible">
       <h1>Spanish 3 PPP</h1>
       <p>Building on the Spanish 2 curriculum, students continue to explore the differences between the indicative and the subjunctive moods throughout the year. Students read short stories, poetry, and drama within the cultural context of Spain and Latin America. Students write original pieces that reflect the style of the assigned authors. In class, students engage in spontaneous speech using the newly acquired vocabulary and advanced grammar structures. The textbook Imagina, teacher generated material, short films, and full length movies enhance student learning. Spanish is the sole language of instruction in class. This is a UC eligible course.</p>
       <p>Prerequisites: Spanish 2 or 2A. Incoming students must take a placement examination and be interviewed.</p>
@@ -142,7 +196,7 @@
       <a href="https://www.lwhs.org/ftpimages/200/download/download_2066163.docx">Sample Syllabus | Hernandez</a>
       </div>
 
-      <div data-role="collapsible">
+      <div class="folder" data-role="collapsible">
       <h1>Spanish 4</h1>
       <p>This course is designed to promote the use of previously acquired knowledge of the Spanish language while developing a deeper understanding of the Spanish speaking world through a series of thematic units. Through film, literature, and internet sources many cultural topics are explored. Recent topics have included the immigrant experience in the U.S. (as seen through documentary film, first person narrative, and literature) and Chile in the Allende-Pinochet era. Regular writing assignments, daily speaking activities, grammar review, and new advanced grammar serve to preserve and advance students’ writing and speaking. Students are expected to use only Spanish for all interactions inside the classroom. This is a UC eligible course.</p>
       <p>Prerequisites: Spanish 3 or 3H</p>
@@ -151,7 +205,7 @@
       <a href="https://www.lwhs.org/ftpimages/200/download/download_2066168.docx">Sample Syllabus #2 | Reyes</a>
       </div>
 
-      <div data-role="collapsible">
+      <div class="folder" data-role="collapsible">
       <h1>Spanish 4 Honors</h1>
       <p>This course is an advanced seminar for students who have already exhibited high intermediate to advanced proficiency in written and spoken Spanish. Students examine the experiences of immigrants to the San Francisco Bay Area and explore the music, literature, and culture of Latin American countries and Spain. Students are expected to conduct independent research using source materials in Spanish for written and oral reports. The principal text, San Francisco tiene su propio son, features original articles written by the instructor, interviews with native speakers from diverse backgrounds, as well as a compilation of related articles and works by well known Spanish and Latin American writers. Spanish is the sole language of instruction. This is a UC eligible course.</p>
       <p>Prerequisites: Spanish 3 or 3H. Students may not enroll in Spanish 4H if they have already completed Spanish 4.</p>
@@ -161,7 +215,7 @@
 
   </div>
 
-  <div data-role="footer">
+  <div id="foot" data-role="footer">
     <h1></h1>
   </div>
 </div> 

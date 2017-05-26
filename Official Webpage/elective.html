@@ -6,34 +6,88 @@
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
-<style> body {padding: 0; margin: 0;} canvas {vertical-align: top;} div {background-color: #beefed;} h1{background-color: #ffe599;}</style>
+<style> 
+body {
+  background-color: #eae0d5;
+   width: 100%; 
+   height: 100%;
+   /* Old browsers */
+background: -moz-linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+/* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+/* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+  } 
+
+  .ui-content {
+    position: relative;
+      padding-top: 110px;
+      background-color: #eae0d5;
+   width: 100%; 
+   height: 100%;
+   /* Old browsers */
+background: -moz-linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+/* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+/* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+  }
+
+  #col {
+      background-color: #eae0d5;
+      text-transform: uppercase;
+   width: 100%; 
+   height: 90px;
+   line-height: 50px;
+   position: fixed;
+   z-index: 2;
+   /* Old browsers */
+background: -moz-linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+/* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+/* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+
+    }
+
+  .folder {
+    max-width: 75%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  #foot {
+    padding: 5px;
+  }
+</style>
 </head>
 <body>
 
 
 
 <div data-role="page">
-  <div data-role="header">
-    <h1 id="col">ELECTIVES</h1>
+  <div id="col" data-role="header">
+    <h1 style="font-size: 30px;">Electives</h1>
   </div>
 
   <div data-role="main" class="ui-content">
-    <div data-role="collapsible">
+    <div class="folder" data-role="collapsible">
       <h1>BlendEd</h1>
-        <div data-role="collapsible">
+        <div class="folder" data-role="collapsible">
         <h1>Overview</h1>
         <img src="http://www.blendedconsortium.org/wp-content/uploads/2014/04/BlendEdCanvasLogo.png" alt="BlendEd" style="width:200px;height:100px;">
         <p>The Bay Area <a href="http://www.blendedconsortium.org/">BlendEd Consortium</a> is pleased to offer the following electives which combine demonstrated best practices for online learning with face to face interactions and making the most of local area resources. The instructors of these courses are talented and committed faculty from the five BlendEd Consortium schools (The Athenian School, The College Preparatory School, Lick-Wilmerding High School, Marin Academy, and The Urban School). Students will access these courses via a learning management system (LMS), where they can engage in a variety of ways, including reviewing materials, exploring digital media, participating in group discussions, and submitting their work. These courses are interactive with significant time working asynchronously in the LMS and occasional virtual class meetings. Each course will also include a minimum of three face to face sessions, which will occur outside regular school hours and may occur on weekends or holidays. Students must have reliable access to the internet and access to a device such as a desktop computer, laptop computer, tablet, or similar.</p>
         <p><b>BlendEd offerings are full credit, UC approved, graded courses, and may count as a student's sixth course.</b></p>
       </div>
 
-      <div data-role="collapsible">
+      <div class="folder" data-role="collapsible">
         <h1>#Entrepreneurship</h1>
         <p>Living in the Bay Area we are close to the most important social media companies and through this BlendEd class students will be able to utilize this unique accessibility they have to a cutting edge field. This course will focus on empowering students to create a unique product or program that is socially beneficial. In addition, students will be equipped with marketing skills and techniques that allow them to engage a fast emerging industry and strategize on ways to create their own online business entities. Students will learn different methods of utilizing social media outlets such as YouTube, Facebook, Twitter, and their own original website in order to build an online community that will promote the products that they create within the course. There are no prerequisite required for the course. We will begin with our first meeting at a BlendEd school classroom and the subsequent meetings will be field trips to a few of the major social media companies that are located in the Bay Area and will give students that hands on experience of seeing this work in action.</p>
         <p><b>This semester-long course is offered in the Spring.</b></p>
       </div>
 
-      <div data-role="collapsible">
+      <div class="folder" data-role="collapsible">
         <h1>Advanced Computer Science: Complexity Theory and Advanced Algorithms</h1>
         <p>Advanced Computer Science: Complexity Theory and Advanced Algorithms focuses attention on the central idea of abstraction, make heavy use of the idea of functions as data, and discuss relevant topics in computer science such as functions as data, complexity, graph theory, and cryptography. It will also focus on some of the “big ideas” of computing such as recursion, concurrency, and the limitations of computing.</p>
         <ul>
@@ -50,14 +104,14 @@
       </div>
     </div>
 
-    <div data-role="collapsible">
+    <div class="folder" data-role="collapsible">
       <h1>English Electives</h1>
-        <div data-role="collapsible">
+        <div class="folder" data-role="collapsible">
         <h1>Overview</h1>
         <p>The four year English curriculum provides students with the skills and habits of mind to read, write, and speak confidently and competently about a broad range of texts. Each year, students hone their analytical skills by drawing on class discussions and independent close readings to craft thoughtful, subtle responses to literature from around the world. All English classes include frequent writing assignments in various genres that encourage students to develop an authentic voice, as well as critical and creative independent thinking. A focus on the writing process and revision skills is integral to every course. Classes are discussion and activity oriented, requiring students to become respectful of multiple perspectives, compassionate for others, and confident in expressing their ideas. All English courses are UC eligible.</p>
       </div>
 
-      <div data-role="collapsible">
+      <div class="folder" data-role="collapsible">
       <h1>Creative Writing: Memoir, the Art of the Personal Story</h1>
       <p>Something we do frequently and in many different forms (for college essays, when we enter new environments and new relationships, on job and fellowship applications) is tell people about who we are and what we care about. It seems like it should be easy, but it’s actually fairly complex to figure out what it means to capture a personal story that is relevant and significant to others as well as to ourselves. In order to learn how to tell our own stories and to talk about what’s most important to us and why, we will explore what it means to break down some of the preconceived notions and definitions (in terms of form and content) that seem to prescribe what it means to tell or write a personal narrative. The main tasks will be (1) to read many different types and forms of memoirs; (2) write your own personal memoirs implementing new techniques and forms; (3) workshop, critique, revise, and help others do so, and (4) keep a journal documenting your class work and your exercises. We can’t understand or empathize with others until we understand ourselves, and this course will provide an entry into doing both. Course texts will include writing by Joan Didion, Ta Nehisi Coates, Eula Biss, Natalia Ginzburg, Roxane Gay, Toni Morrison, Richard Rodriguez, David Sedaris, and many others.</p>
 
@@ -65,7 +119,7 @@
      <p><b>This semester-long elective is offered in the Spring.</b></p>
     </div>
 
-      <div data-role="collapsible">
+      <div class="folder" data-role="collapsible">
         <h1>Journalism PPP</h1>
       <p>The Journalism class offers an opportunity for students to work in a professional setting as a member of the Fourth Estate, the press, the vital investigative branch of democracy. Students will plan, write, edit, and design the LWHS student print publication, the <i>Paper Tiger</i>, and the <a href="http://www.lwhspapertiger.org/">online version</a>. Students will write in depth news stories, features, profiles, reviews, and editorials, and they must write for all sections of the paper—from news, sports, arts, leisure and op ed. To get the story, students will work in the field and in the newsroom researching, writing, discussing, and dissecting. The course will facilitate building skills around how to think critically, write strategies, and study the design and impact of rhetorical techniques. Students will consider both the ethics of journalism and the future of different news media. Students must learn Adobe InDesign CC to publish the paper.</p>
       <p>PPP requirements for the course will be satisfied by students identifying, investigating, and writing one long-form feature that highlights the work of a Bay Area community organization or a vital community issue. This feature must require research, investigation, and interviews off campus. The article will be published in the <i>Paper Tiger</i> and possibly in an external news outlet. In addition, students must write one op ed and submit it for consideration, for example, to Youth Radio or KQED Perspectives.</p>
@@ -74,38 +128,38 @@
       </div>
     </div>
 
-    <div data-role="collapsible">
+    <div class="folder" data-role="collapsible">
       <h1>Independent Studies</h1>
-        <div data-role="collapsible">
+        <div class="folder" data-role="collapsible">
         <h1>Overview</h1>
         <p>Juniors and seniors may do semester-long independent studies to investigate a topic in a discipline not offered at LWHS (e.g. economics) or a topic not covered in-depth in the curriculum (e.g. Native American history). Students must submit a detailed proposal to apply for an independent study that includes: a pointed question that the student will investigate, a syllabus detailing what materials the student will explore, and a description of the proposed final product. While a faculty member must supervise an independent study, the work of planning and executing the independent study is the responsibility of the student. Aside from shops-based independent studies that may require supervision, students should expect to check in with their supervising teacher roughly once a rotation. In short, independent studies should be independent. The supervising teacher, the appropriate Department Chair, and the Assistant Head of School must review and sign the proposal.</p>
         <p>Students may have only one independent study per semester, and it may not count as one of a student’s six required courses. Teachers may supervise only one independent study per semester. All independent studies are graded pass/fail.</p>
       </div>
 
-      <div data-role="collapsible">
+      <div class="folder" data-role="collapsible">
         <h1>Independent Study PPP</h1>
         <p>Public Purpose Program Independent Studies investigate a topic or issue not offered or addressed in the LWHS curriculum (e.g. Economics, Quantum Mechanics) or a topic not covered in depth in the curriculum (e.g. Native American history and oppression). A PPP Independent Study requires both curricular and public purpose/service components, designed by the student in collaboration with a faculty or staff sponsor. A student may conduct only one PPP Independent Study per semester, and it does not count as one of the six required courses.</p>
         <p><b>All PPP Independent Studies are graded pass/fail.</b></p>
       </div>
     </div>
 
-    <div data-role="collapsible">
+    <div class="folder" data-role="collapsible">
       <h1>Performing Arts</h1>
-        <div data-role="collapsible">
+        <div class="folder" data-role="collapsible">
         <h1>Overview</h1>
         <p>In the Performing Arts, students learn that performance is a powerful means of communication, expression, and reflection. The department encourages students to explore their creative potential, provides a supportive environment to take artistic risks, and teaches the importance of persistence in all endeavors. Performing Arts faculty value a positive spirit of collaboration and also empower students to develop their individual artistic expression. Expectations are rigorous, and assessment is based on progress toward mastery of craft, effective collaboration, and persistent effort.</p>
         <p>The Performing Arts is an academic department consisting of four program areas—Dance, Instrumental Music, Theatre Arts, and Vocal Music. Introductory through advanced classes are offered for credit within each program. The department also offers all students the opportunity to participate in after school Theatre Arts productions. The performances and programs create strong connections throughout the community and exemplify the core of the school’s mission.</p>
         <p><a href="https://lwhs.myschoolapp.com/ftpimages/200/download/download_2252952.pdf">More Info</a> about the specific programs of the Performing Arts Department.</p>
       </div>
 
-      <div data-role="collapsible">
+      <div class="folder" data-role="collapsible">
         <h1>Acting</h1>
         <p>This class is designed for beginning actors, or students with little or no experience. During the first semester, students are introduced to theatre games, improvisation, and basic acting skills, such as focus and concentration, voice and physicality, and the art of creating characters for the stage. Students learn to work as an ensemble, rehearsing and performing in groups, as well as individually in solo performances. During the second semester, students explore acting Shakespeare, musical theatre, and docudrama. The class culminates in a final one-act play performed for the school community.</p>
         <p><b>This is a year-long course.</b></p>
         <a href="https://www.lwhs.org/ftpimages/200/download/download_2066058.docx">Sample Syllabus | Zavala</a>
       </div>
 
-      <div data-role="collapsible">
+      <div class="folder" data-role="collapsible">
         <h1>Advanced Combo PPP</h1>
         <p>Open by audition only, this group is for instrumentalists in grades 10–12 with advanced proficiency of their instruments, a strong foundation in music fundamentals, and demonstrated self-discipline and maturity to succeed in project-based activities, service activities, peer tutoring, and public concerts. Emphasis is on working in small combos to develop concert and community service performance material, cultivate outreach opportunities, and forge mentoring relationships with beginning level musicians from within and beyond the school. Students will hone their own skill and performance experience through regular rehearsals and participation in appropriate concerts and festivals. Students will be assigned to specific combos to study and prepare a variety of jazz and contemporary music for their public performances.</p>
         <p>Prerequisites: Three years of playing experience, minimum of one semester in a LWHS instrumental ensemble, or permission of instructor, and successful placement audition/interview. Participation in one academic year does not guarantee placement in subsequent years.</p>
@@ -114,9 +168,9 @@
       </div>
     </div>
 
-    <div data-role="collapsible">
+    <div class="folder" data-role="collapsible">
       <h1>Technical Arts</h1>
-        <div data-role="collapsible">
+        <div class="folder" data-role="collapsible">
         <h1>Overview</h1>
         <p>The technical arts program is a place where the head, heart, and hands converge, providing opportunities to tackle real world design challenges. Remaining faithful to its century old history as an innovative institution in the technical arts, LWHS offers a unique collection of shop classes. Students learn to work conceptually and physically, moving from theory to practice in order to bring the designs of the mind into the physical world. The technical arts department objectives include cross disciplinary and collaborative learning, skills for engineering, effective problem solving, creative expression, competency in the language of craft and design, and personal empowerment through self confidence and self esteem. All courses can be taken multiple times for credit with the permission of the instructor and when space in the course is available.</p>
         <p>The school requires all students to take a minimum of four semesters in technical arts. Besides taking Design & Technology in 9th grade, students must choose two other semester long courses that meet in the various shops with the following content:</p>
@@ -136,7 +190,7 @@
         <p>Full album of student work from various courses in <a href="http://www.lwhs.org/podium/default.aspx?t=52562&a=292717&rc=1">2012-2013</a> and <a href="http://www.lwhs.org/podium/default.aspx?t=52562&a=310181&rc=1">2013-2014</a>.</p>
       </div>
 
-      <div data-role="collapsible">
+      <div class="folder" data-role="collapsible">
         <h1>Circuits and Electronics: Analog and Digital</h1>
         <p>This course focuses on the basic skills to design and build with both linear analog and programmable digital circuits. The first of two projects delves into amplifying audio (from a personal music device or musical instrument), as well as sculpting audio frequencies. Students learn to improve the sound of their amplified audio through research on material thickness, resonance, enclosure shapes as well as other factors. The second project focuses on programming a microcontroller for basic digital audio input, output, and audio analysis. After performing a number of basic experiments, students will create a digitally controlled add on for their amplifier—this can be an audio visualizer, an interactive electronic instrument, or an audio sample player.</p>
         <p>Prerequisite: Design & Technology</p>
@@ -144,7 +198,7 @@
         <a href="https://www.lwhs.org/ftpimages/200/download/download_2066105.docx">Sample Syllabus | Kleindolph</a>
       </div>
 
-      <div data-role="collapsible">
+      <div class="folder" data-role="collapsible">
         <h1>Circuits and Electronics: Device Invention</h1>
         <p>The main goal of this course is to make students feel more comfortable and nimble with the process of designing and creating interactive electronic devices. Throughout this course, we will reference this central question: What are the long term implications of an increasingly automated and connected world? The three themed projects created in this course include: Wireless Device Communication (WiFi, Bluetooth, Cellular, RF), Environmental Sensor Data Collection and Visualization, and Solar Powered Devices. Refined craftsmanship is balanced with rapid prototyping as we build circuits, mechanics, code, and enclosures for a variety of creative machines. Some projects are collaborative and require students to practice the collective art of teamwork, inclusion, and compromise. The instructor will act as a curator/facilitator guiding students through specific themes—at times learning with them—through experiments, lectures, guests, and online documentation.</p>
         <p>The course offers more project freedom than the Analog and Digital course, with the expectation for each student to take ownership of the learning process by seeking answers from any and all sources including: provided documentation, peers, online resources, and the instructor. Finally, it’s important to put everything we do in context by asking “why?” and “for whom?” do we do these projects.</p>
@@ -153,9 +207,9 @@
       </div>
     </div>
 
-    <div data-role="collapsible">
+    <div class="folder" data-role="collapsible">
       <h1>Visual Arts</h1>
-        <div data-role="collapsible">
+        <div class="folder" data-role="collapsible">
         <h1>Overview</h1>
         <p>The visual arts department nurtures perception, thinking and expression. According to Spanish philosopher, Jose Ortega y Gasset, “Art is creation, renewal, and freedom.” Zen master, D.T. Suzuki asserts that it rises “… from the isness of things, unhampered by senses and intellect.” The department believes that it empowers the discovery of creative promise within.</p>
         <p>Visual arts faculty encourage students to explore their imagination, tap their experience and knowledge about the world, and trust their unique vision without fear of failure. We stress visual literacy, conceptual thinking, experimentation, craftsmanship, and commitment. LWHS students will be asked to explore, take risks, persevere, and deepen their visual perceptions honestly, reflectively, and carefully. The intention is to inspire them to be curious, creative, and courageous, but also disciplined and attentive. Through the development of their visual literacy, LWHS students will become more confident in the uniqueness of their vision.</p>
@@ -163,7 +217,7 @@
         <p>“Art is not a thing; it is a way.” —<i>Elbert Hubbard</i></p>
       </div>
 
-      <div data-role="collapsible">
+      <div class="folder" data-role="collapsible">
         <h1>Architectural Design</h1>
         <p>Students will explore the world of their imagination as they learn principles of architectural composition. The course will address foundations of the design process such as form, function, proportion, scale, and space. Through a number of individual projects, students learn about specific requirements for the design of private and public spaces. Great emphasis is placed on creativity, graphic presentation, and computer skills. In addition, students practice hand sketching and coloring, as well as model making. Studio work is supplemented by a survey of important monuments in the history of architecture, guest appearances by local architects, and field trips to design studios.</p>
         <p>Prerequisite: Contemporary Media and Art</p>
@@ -180,7 +234,7 @@
         </p>
       </div>
 
-      <div data-role="collapsible">
+      <div class="folder" data-role="collapsible">
         <h1>Advanced Architectural Design</h1>
         <p>A continuation and extension of the introductory Architectural Design class, the Advanced Architectural Design course is designed to make connections with the real world. While students still explore the value of creativity and originality of their designs, a great emphasis is placed on learning about socially responsible and sustainable architecture. Additionally, students study the technological, ecological, and urban aspects of skyscrapers because they have fundamentally transformed cities. No other form of construction can replace them as a response to the exponentially increasing need for space. In order to deepen their sense of architectural composition while developing a personal style students work on individual and group projects. Their studio work is supplemented with slides and film presentations that address issues in contemporary architecture. Class activities include oral and written critiques in response to student and professional work, visits to exhibits and design studios, and presentations by local professionals.</p>
         <p>Prerequisite: Architectural Design or permission from the instructor.</p>
@@ -188,16 +242,16 @@
       </div>
     </div>
 
-    <div data-role="collapsible">
+    <div class="folder" data-role="collapsible">
       <h1>Teaching Assistantships</h1>
-        <div data-role="collapsible">
+        <div class="folder" data-role="collapsible">
         <h1>Overview</h1>
         <p>Juniors and seniors may serve for a semester as a Teaching Assistant (TA) in a class that they have previously taken with success. TA’s must be attached to a specific section of a class, are expected to attend all class meetings, and are to be included in the class roll. Additionally, they should meet once a rotation outside of class with their supervising faculty member. Alternatively, in the case of science, TA’s who assist with lab preparation may meet regularly with a faculty member during a shared free block.</p>
         <p>All TA’s receive academic credit, and therefore their work should not be restricted to such tasks as photocopying and filing. Rather, they should be exposed to what it means to be a teacher through meaningful activities, such as lesson planning, testing labs, and creating evaluations; in other words, it is expected that all TA’s will have the opportunity to teach. Additionally, all TA’s are expected to produce a thoughtful reflection of their work (e.g. a portfolio, write-up of a new lab design, or conference presentation).</p>
         <p>Students may hold only one TA position per semester, and it may not count as one of a student’s six required courses. Teachers may have only one TA per class, and all TA’s are graded pass/fail.</p>
       </div>
 
-      <div data-role="collapsible">
+      <div class="folder" data-role="collapsible">
         <h1>Student Leadership Training in a Technical Arts Environment PPP</h1>
         <p>This course will have students apply the combined skills learned in previous technical arts classes with new skills focused on leadership. The faculty member will act as a mentor and coach, introducing material so that the student leader can better understand cultural competency, equitable pedagogical practices, and their impact on the learning environment. These learning strategies will then be applied and focus on four main areas on a daily basis—teaching, community, machine maintenance/class prep, and reflection.</p>
         <p>Prerequisites: Design & Technology along with one semester of the class being a teaching assistant.</p>
